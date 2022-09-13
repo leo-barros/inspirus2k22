@@ -1,0 +1,29 @@
+body {
+  z-index: 2;
+}
+
+#card-container {
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  padding: min(4vw, 4vh);
+  border: 0.3vh solid black;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: min(3vh, 3vw);
+  height: min(60vw, 60vh);
+  width: 80%;
+}
+#card h1 {
+  font-size: min(8vw, 8vh);
+}
+#card p {
+  font-size: min(4vw, 4vh);
+}
