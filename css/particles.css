@@ -35,7 +35,7 @@ html,body{
 canvas{
   display:block;
   z-index: 10;
-  position: fixed;
+  
 
   
   
@@ -45,21 +45,14 @@ canvas{
 
 
 
-#P-cont{
-  overflow: hidden;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  
-}
+
 
 
 #particles-js{
+   
  filter: blur(80px);
+  width: 100%;
+  height: 100%;
+  position: fixed;
 
-
-  width: 90%;
-  height: 90%;
-
-  transform: scale(1.5);
 }
