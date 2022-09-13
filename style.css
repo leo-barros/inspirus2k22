@@ -44,7 +44,13 @@ body {
   justify-content: space-between;
   align-items: flex-end;
 }
-#card button {
+#card a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 900;
   font-family: "MuseoModerno", cursive;
   font-size: 2vw;
@@ -55,7 +61,7 @@ body {
   background: rgba(215, 215, 215, 0);
   transition: background-color 0.7s, color 0.3s;
 }
-#card button:hover {
+#card a:hover {
   color: aliceblue;
   background: rgba(0, 0, 255, 0.6666666667);
 }

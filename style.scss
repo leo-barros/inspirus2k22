@@ -61,7 +61,13 @@ body{
         align-items: flex-end;
        
     }
-    button{
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: 900;
         font-family: 'MuseoModerno', cursive;
         font-size: 2vw;
