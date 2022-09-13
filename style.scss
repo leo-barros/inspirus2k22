@@ -76,7 +76,7 @@ body{
         width: 48%;
         height: 60%;
         background: #d7d7d700;
-        transition: background-color .7s,color .3s;
+        transition: background-color .5s,color .2s;
         &:hover{
             color: aliceblue;
             background: $theme1-1;
