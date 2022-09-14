@@ -10,7 +10,10 @@
 </head>
 <div id="P-cont"><div id="particles-js"></div></div>
 <body>
-  
+<div id="nav">
+  <a href="">Home</a>
+  <a href="">About</a>
+</div>
 
 <section id="hero" class="" >
 <h1><span>Inspirus</span> 2022</h1>
@@ -18,7 +21,10 @@
   <p>We are pleased to inform you that the Students Council of Computer Engineering (C-Codes), Don Bosco College of Engineering, Fatorda is organizing its 5th two-day technical event -"INSPIRUS 2K21" on 29th and 30th October 2021. It's been a very successful event running for the past 4 years with overwhelming participation from various schools, higher secondaries, and colleges across Goa who come together to compete, innovate and create.</p>
 </div>
 <!--Timeline-->
-<h1>Timeline</h1>
+<section id="timeline">
+  <h1>Timeline</h1>
+</section>
+
 
 </section>
 
@@ -55,6 +61,7 @@
 
 
 
+
 </section>
 
 
@@ -62,6 +69,17 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+  var menuList =document.getElementById("menuList");
+     menuList.style.maxHeight ="0px";
+     function togglemenu(){
+          if(menuList.style.maxHeight =="0px")
+          {
+               menuList.style.maxHeight ="130px";
+          }
+          else{
+               menuList.style.maxHeight ="0px";
+          }
+     }
 </script>
   
 </body>
