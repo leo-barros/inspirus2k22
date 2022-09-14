@@ -18,19 +18,22 @@
     --clr-text:255, 255, 255;
     --clr-accent:48, 89, 254;
 
-    --weight:400;
-    --thickness:.3vh;
+ 
+
 }
 .yellow{
     --clr-base:228, 254, 1;
     --clr-text:2, 2, 2;
     --clr-accent:1, 1, 1;
 
-    --thickness:.4vh;
+ 
 }
 
 *{
     margin: 0%;
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 body{
@@ -42,6 +45,7 @@ body{
     z-index: 200;
     font-family: 'Titillium Web', sans-serif;
     color: rgba(var(--clr-text), 1);
+    
 }
 #card-container{
 
@@ -120,7 +124,7 @@ body{
         transition: background-color .5s,color .2s;
         &:hover{
             color: rgba(var(--clr-base),1);
-            background: rgba(var(--clr-accent),.9);
+            background: rgba(var(--clr-accent),1);
             
         }
        
