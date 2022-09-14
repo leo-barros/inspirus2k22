@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
+
   gap: 5vw;
   flex-direction: column;
 }
