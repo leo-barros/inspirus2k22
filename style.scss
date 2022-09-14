@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 
-$radius:2vw;
-$theme1:blue;
-$theme1-1:#0000ffaa;
 
+:root{
+    
+    --clr-base:255, 255, 255;
+    --clr-text:1, 1, 1;
+    --clr-accent:0, 0, 255;
+   
 
+    --thickness:.34vh;
+    --radius:2vw;
+}
+.dark{
+    --clr-base:17, 17, 17;
+    --clr-text:255, 255, 255;
+    --clr-accent:0, 0, 255;
+}
+.yellow{
+    --clr-base:228, 254, 1;
+    --clr-text:0, 0, 0;
+    --clr-accent:0, 0, 255;
+}
 
 *{
     margin: 0%;
@@ -14,7 +30,7 @@ $theme1-1:#0000ffaa;
 body{
    
    max-width: 100vw;
-    background: rgb(255, 255, 255);
+    background: var(--clr-base);
     z-index: 200;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -39,16 +55,16 @@ body{
     
     
     padding: min(4vw,4vh);
-    border: .4vh solid #1111116c ;
-    border-radius: $radius;
+    border: var(--thickness) solid rgba(var(--clr-text),0.4) ;
+    border-radius:var(--radius);
     display: flex;
     flex-direction: column;
   
     gap: 2vw;
    
-    width: 60%;
+    width: 70%;
     backdrop-filter: blur(6px);
-    box-shadow: 1vh 1vh 4vh  #11111139;
+    box-shadow: 1vh 1vh 4vh  var(--clr-text);
     background: rgba(182, 181, 181, 0.172);
 
     h1{
@@ -57,9 +73,9 @@ body{
         font-size: min(8vw,8vh);
     }
     p{
-
-        color: #000;
-        font-size: max(2.2vw,2.2vh);
+        font-weight: 400;
+        color: var(--clr-text);
+        font-size: max(1.8vw,1.8vh);
     }
     img{
         position:absolute;
@@ -80,22 +96,22 @@ body{
     a{
         text-align: center;
         text-decoration: none;
-        color: #000;
+        color: var(--clr-text);
         display: flex;
         justify-content: center;
         align-items: center;
         font-weight: 900;
         font-family: 'MuseoModerno', cursive;
         font-size: 2vw;
-        border: .4vh solid #1111116c;
-        border-radius: $radius;
+        border: var(--thickness) solid rgba(var(--clr-text), .4);
+        border-radius: var(--radius);
         width: 48%;
         height: 60%;
-        background: #d7d7d700;
+        background: #00000000;
         transition: background-color .5s,color .2s;
         &:hover{
-            color: aliceblue;
-            background: $theme1-1;
+            color: rgba(var(--clr-base),1);
+            background: rgba(var(--clr-accent),.6);
             
         }
        
@@ -105,6 +121,17 @@ body{
 #hero{
     position: relative;
 
-    color: rgb(0, 0, 0);
+    color: var(--clr-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h1{
+        span{
+            color: rgba(var(--clr-accent),1);
+        }
+        font-family: 'MuseoModerno', cursive;
+        font-size: 8vw;
+    }
 
 }
