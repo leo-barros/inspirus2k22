@@ -3,20 +3,24 @@
   --clr-base:255, 255, 255;
   --clr-text:1, 1, 1;
   --clr-accent:0, 0, 255;
+  --weight:400;
   --thickness:.34vh;
   --radius:2vw;
 }
 
 .dark {
-  --clr-base:17, 17, 17;
+  --clr-base:1, 1, 1;
   --clr-text:255, 255, 255;
-  --clr-accent:0, 0, 255;
+  --clr-accent:48, 89, 254;
+  --weight:400;
+  --thickness:.3vh;
 }
 
 .yellow {
   --clr-base:228, 254, 1;
-  --clr-text:0, 0, 0;
-  --clr-accent:0, 0, 255;
+  --clr-text:2, 2, 2;
+  --clr-accent:1, 1, 1;
+  --thickness:.4vh;
 }
 
 * {
@@ -24,11 +28,13 @@
 }
 
 body {
+  transition: all 0.4s;
   overflow-x: hidden;
   max-width: 100vw;
-  background: var(--clr-base);
+  background: rgba(var(--clr-base), 1);
   z-index: 200;
   font-family: "Titillium Web", sans-serif;
+  color: rgba(var(--clr-text), 1);
 }
 
 #card-container {
@@ -55,14 +61,14 @@ body {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   box-shadow: 1vh 1vh 4vh var(--clr-text);
-  background: rgba(182, 181, 181, 0.172);
+  background: rgba(var(--clr-base), 0.2);
 }
 .card h1 {
   font-family: "MuseoModerno", cursive;
   font-size: min(8vw, 8vh);
 }
 .card p {
-  font-weight: 400;
+  font-weight: var(--weight);
   color: var(--clr-text);
   font-size: max(1.8vw, 1.8vh);
 }
@@ -99,7 +105,7 @@ body {
 }
 .card a:hover {
   color: rgba(var(--clr-base), 1);
-  background: rgba(var(--clr-accent), 0.6);
+  background: rgba(var(--clr-accent), 0.9);
 }
 
 #hero {
@@ -145,10 +151,15 @@ body {
   font-family: "MuseoModerno", cursive;
   font-size: min(2vw, 2vh);
   border-radius: var(--radius);
-  width: 10%;
+  padding-left: 3%;
+  padding-right: 1%;
   height: 80%;
   transition: background-color 0.5s, color 0.2s;
 }
 #nav a:hover {
   color: rgba(var(--clr-accent), 1);
+}
+#nav i {
+  font-size: min(4vw, 4vh);
+  padding: 1vw;
 }
