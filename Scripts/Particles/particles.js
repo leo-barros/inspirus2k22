@@ -733,8 +733,8 @@ var pJS = function(tag_id, params){
           repulseFactor = clamp((1/repulseRadius)*(-1*Math.pow(dist_mouse/repulseRadius,2)+1)*repulseRadius*velocity, 0, 50);
       
       var pos = {
-        x: p.x + normVec.x * repulseFactor,
-        y: p.y + normVec.y * repulseFactor
+        x: p.x + (normVec.x * repulseFactor),
+        y: p.y + (normVec.y * repulseFactor)
       }
 
       if(pJS.particles.move.out_mode == 'bounce'){
