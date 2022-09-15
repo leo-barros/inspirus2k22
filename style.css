@@ -67,7 +67,7 @@ body {
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px);
   box-shadow: 1vh 1vh 4vh var(--clr-text);
-  background: rgba(var(--clr-base), 0);
+  background: rgba(var(--clr-base), 1);
 }
 .card h1 {
   font-family: "MuseoModerno", cursive;
