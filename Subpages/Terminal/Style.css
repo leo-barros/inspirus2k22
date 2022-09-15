@@ -1,0 +1,37 @@
+* {
+  margin: 0%;
+}
+
+body {
+  background: #000;
+}
+
+#terminal .line {
+  font-family: monospace;
+  font-size: 1.1em;
+  color: rgb(0, 255, 0);
+  filter: blur(0.1px);
+}
+#terminal .active::after {
+  content: "_";
+  -webkit-animation: cursor_blink 0.8s ease-in-out 0s infinite;
+          animation: cursor_blink 0.8s ease-in-out 0s infinite;
+}
+
+@-webkit-keyframes cursor_blink {
+  0%, 100%, 25% {
+    opacity: 100%;
+  }
+  50%, 75% {
+    opacity: 0%;
+  }
+}
+
+@keyframes cursor_blink {
+  0%, 100%, 25% {
+    opacity: 100%;
+  }
+  50%, 75% {
+    opacity: 0%;
+  }
+}

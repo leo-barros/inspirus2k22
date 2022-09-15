@@ -9,6 +9,8 @@
   --clr-base:255, 255, 255;
   --clr-text:1, 1, 1;
   --clr-accent:0, 0, 255;
+  --clr-next:48, 89, 254;
+  --clr-link:0, 0, 255;
   --weight:400;
   --thickness:.34vh;
   --radius:2vw;
@@ -18,15 +20,20 @@
   --clr-base:1, 1, 1;
   --clr-text:255, 255, 255;
   --clr-accent:48, 89, 254;
+  --clr-next:255, 230, 0;
+  --clr-link:0, 0, 255;
 }
 
 .yellow {
   --clr-base:255, 230, 0;
   --clr-text:2, 2, 2;
   --clr-accent:1, 1, 1;
+  --clr-next:255, 255, 255;
+  --clr-link:0, 0, 255;
 }
 
 * {
+  cursor: none !important;
   margin: 0%;
 }
 * ::-webkit-scrollbar {
@@ -165,14 +172,37 @@ body {
   transition: background-color 0.5s, color 0.2s;
 }
 #nav a:hover {
-  color: rgba(var(--clr-accent), 1);
+  color: rgba(var(--clr-next), 1);
 }
 #nav i {
   font-size: min(4vw, 4vh);
   padding: 1vw;
+  transition: color 0.5s;
+}
+#nav i:hover {
+  color: rgba(var(--clr-next), 1);
 }
 
 #footer {
+  margin-top: 10vw;
+  background: rgba(var(--clr-base), 1);
   position: relative;
   height: 30vw;
+  display: flex;
+  justify-content: center;
+}
+
+#cursor {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+  position: absolute;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: var(--thickness) solid rgba(var(--clr-text), 1);
+  pointer-events: none;
 }
