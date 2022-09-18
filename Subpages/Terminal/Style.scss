@@ -1,19 +1,28 @@
 
 *{
     margin: 0%;
+    &::selection{
+        background: rgb(255, 255, 255);
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
 }
 body{
     background: #000;
 }
-#terminal{
-    .line{
-        font-family:monospace;
-        font-size: 1.1em;
- 
-        color: rgb(0, 255, 0);
-        filter: blur(.1px);
+.line{
+    font-family:monospace;
+    font-size: 1.1em;
 
-    }
+    color: rgb(0, 255, 0);
+    filter: blur(.1px);
+
+}
+#terminal{
+    
+ 
+    overflow: scroll;  
     .active{
   
         &::after{
@@ -23,6 +32,27 @@ body{
         }
     }
 }
+input{
+
+
+       
+    width: 90vw;
+   
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    &:focus{
+        font-family:monospace;
+        font-size: 1.1em;
+    
+        color: rgb(0, 255, 0);
+        filter: blur(.1px);
+       
+        border: none; 
+        text-decoration: none;
+        outline: none;
+    }
+
+}
 
 @keyframes cursor_blink {
     0%,100%,25%{
@@ -31,4 +61,8 @@ body{
     50%,75%{
         opacity: 0%;
     }
+}
+.logo{
+    font-size:1em;
+  word-wrap: none;
 }
