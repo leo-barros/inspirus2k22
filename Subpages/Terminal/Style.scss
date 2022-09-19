@@ -2,21 +2,35 @@
 *{
     margin: 0%;
     &::selection{
-        background: rgb(255, 255, 255);
+        background: var(--select);
+        color: var(--selecttext);
     }
     ::-webkit-scrollbar{
         display: none;
     }
 }
 body{
-    background: #000;
+    background: var(--bg);
+    
+}
+:root{
+    --bg:black;
+    --text:rgb(0, 255, 0);
+    --select:white;
+    --selecttext:black;
+}
+.light{
+    --bg:rgb(255, 255, 255);
+    --text:rgb(14, 14, 14); 
+    --select:blue;
+    --selecttext:white;
 }
 .line{
     font-family:monospace;
     font-size: 1.1em;
 
-    color: rgb(0, 255, 0);
-    filter: blur(.1px);
+    color:var(--text);
+    filter: blur(0.2px);
 
 }
 #terminal{
@@ -44,7 +58,7 @@ input{
         font-family:monospace;
         font-size: 1.1em;
     
-        color: rgb(0, 255, 0);
+        color:var(--text);
         filter: blur(.1px);
        
         border: none; 

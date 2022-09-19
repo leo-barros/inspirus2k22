@@ -1757,6 +1757,16 @@ function checkCommand(c){
         playvid=false
         createRecord(c,"empty");
         console.log("PRINT")
+    }else if(c.toLowerCase()=="light"){
+        
+        document.querySelector('body').className='light'
+        createRecord(c,"empty");
+        
+    }else if(c.toLowerCase()=="dark"){
+        
+        document.querySelector('body').className=''
+        createRecord(c,"empty");
+        
     }else{
         //Wrong Code
         createRecord(c,"error");
@@ -1790,17 +1800,25 @@ function List(){
     let line = CodeLine.cloneNode(true) 
     line.textContent=sl+"All Available Commands" 
     terminal.appendChild(line)
+
     line = CodeLine.cloneNode(true) 
     line.textContent=sl+sl+"    list" 
     terminal.appendChild(line)
+
     line = CodeLine.cloneNode(true) 
     line.textContent=sl+sl+"    join" 
     terminal.appendChild(line)
+
     line = CodeLine.cloneNode(true) 
     line.textContent=sl+sl+"    print" 
     terminal.appendChild(line)
+
     line = CodeLine.cloneNode(true) 
     line.textContent=sl+sl+"    rick" 
+    terminal.appendChild(line)
+
+    line = CodeLine.cloneNode(true) 
+    line.textContent=sl+sl+"    light" 
     terminal.appendChild(line)
 }
 
