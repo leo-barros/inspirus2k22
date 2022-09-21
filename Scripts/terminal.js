@@ -1739,6 +1739,11 @@ function checkCommand(c){
         //List Code
         createRecord(c,"list");
         console.log("LD")
+    }else if(c.toLowerCase()=="join"){
+        //List Code
+        createRecord(c,"print");
+        
+        console.log("LD")
     }else if(c.toLowerCase().includes("print")){
         //PRINT AFTER PRINT FUNCTION
         createRecord(c,"print");
