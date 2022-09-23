@@ -39,6 +39,7 @@ body {
 }
 
 #terminal {
+  transition: filter 0.5s, opacity 0.3s 0.1ms;
   overflow: scroll;
 }
 #terminal .active::after {

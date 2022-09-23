@@ -35,7 +35,7 @@ body{
 }
 #terminal{
     
- 
+ transition: filter .5s,opacity .3s .1ms;
     overflow: scroll;  
     .active{
   
