@@ -1725,18 +1725,18 @@ JJJJJJJJJJJJJJJ????????????JGBINSPIRUS2022#BYY5YJJJY5GB##BBBJ7777777777777777777
 const timeToLoadForm=2000;
 
 //links
-const InspirathonLink='https://www.tutorialspoint.com/javascript/'
-const RSLink='https://www.tutorialspoint.com/javascript/'
-const CodeplayLink='https://www.tutorialspoint.com/javascript/'
-const ExQuiziteLink='https://www.tutorialspoint.com/javascript/'
-const CWLink='https://www.tutorialspoint.com/javascript/'
-const JCLink='https://www.tutorialspoint.com/javascript/'
-const MindGamesLink='https://www.tutorialspoint.com/javascript/'
-const RAMLink='https://www.tutorialspoint.com/javascript/'
-const FramedLink='https://www.tutorialspoint.com/javascript/'
-const IncarnateLink='https://www.tutorialspoint.com/javascript/'
-const VDJLink='https://www.tutorialspoint.com/javascript/'
-const FunzoneLink='https://www.tutorialspoint.com/javascript/'
+const InspirathonLink='http://rhysjosmin.tk'
+const RSLink='http://rhysjosmin.tk'
+const CodeplayLink='http://rhysjosmin.tk'
+const ExQuiziteLink='http://rhysjosmin.tk'
+const CWLink='http://rhysjosmin.tk'
+const JCLink='http://rhysjosmin.tk'
+const MindGamesLink='http://rhysjosmin.tk'
+const RAMLink='http://rhysjosmin.tk'
+const FramedLink='http://rhysjosmin.tk'
+const IncarnateLink='http://rhysjosmin.tk'
+const VDJLink='http://rhysjosmin.tk'
+const FunzoneLink='http://rhysjosmin.tk'
 
 
 var vid=setInterval(()=>changeImg(),100);
@@ -1747,6 +1747,7 @@ var Maxframes=rr.length
 
 
 //Blink
+b()
 function b(){
     let rand=Math.random()*10
     terminal.style.filter=`blur(${rand/12}px)`
@@ -1999,7 +2000,7 @@ function createRecord(com,fn){
         line.textContent=sl+"You Have Now Entered Dark Mode"
     }else if(fn=="join"){
         join()
-        line.textContent=sl+"Enter Event Name To Know More "
+        line.textContent=sl+"Enter Event Name To Join"
     }
 
     if(fn!="error"){
