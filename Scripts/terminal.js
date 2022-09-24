@@ -2024,7 +2024,9 @@ function List(){
     line.textContent=sl+sl+"    join" 
     terminal.appendChild(line)
 
-
+    line = CodeLine.cloneNode(true) 
+    line.textContent=sl+sl+"    dark" 
+    terminal.appendChild(line)
     
 
     line = CodeLine.cloneNode(true) 
