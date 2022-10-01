@@ -1746,8 +1746,14 @@ clearInterval(vid)
 var Maxframes=rr.length
 
 
+
+setInterval(function(){
+    input.focus()
+   },10000);
+   
+
 //Blink
-b()
+
 function b(){
     let rand=Math.random()*10
     terminal.style.filter=`blur(${rand/12}px)`
@@ -1783,6 +1789,10 @@ function checkCommand(c){
    
         createRecord(c,"list");
       
+    }else if(c.toLowerCase()=="donut"){
+        createRecord(c,"print");
+        donut()
+      
     }else if(c.toLowerCase()=="join"){
 
         createRecord(c,"join");
@@ -1801,7 +1811,7 @@ function checkCommand(c){
         line.textContent=sl+sl+"    enter rickend to stop beign RickRolled (*￣3￣)╭" 
         terminal.appendChild(line)
     
-       
+        
         
         audio.play();
         audio.addEventListener('ended', function() {
@@ -1809,7 +1819,7 @@ function checkCommand(c){
             this.play();
         }, false)
            
-       
+        window.scrollTo(0, 100);
         
    
     }else if(c.toLowerCase()=="rickend"){
@@ -1964,6 +1974,44 @@ function checkCommand(c){
 }
 
 
+
+function donut(){
+
+
+    const pre = document.createElement("pre");
+    terminal.appendChild(pre).classList.add('line');
+
+let x=1760,
+z=0,y=0;setInterval(()=>{z+=.07,y+=.03;
+    const a=[...new Array(x)].map((a,r)=>r % 80 === 79 ?"\n":" "),
+    r=new Array(x).fill(0),
+    t= Math.cos(z),e=Math.sin(z),n=Math.cos(y),
+    o=Math.sin(y);
+
+    for(let s=0;s<6.28; s+=.07)
+    {
+        const c=Math.cos(s),
+        h=Math.sin(s);
+        for(let s=0; s<6.28; s+=.001)
+        {
+            const v=Math.sin(s),
+            M=Math.cos(s),
+            i=c+2,
+            l=1/(v*i*e+h*t+5),
+            p=v*i*t-h*e,
+            d=0|40+30*l*(M*i*n-p*o),
+            m=0|12+15*l*(M*i*o+p*n),
+            f=0|8*((h*e-v*c*t)*n-v*c*e-h*t-M*c*o),
+            y=d+80*m;
+            m<22&&m>=0&&d>=0&&d<79&&l>r[y] &&(r[y]=l,a[y]= "Inspirus22=-+"[f>0?f:0])
+        }
+    }
+    pre.innerHTML=a.join("")
+},25);
+
+
+}
+
 function createRecord(com,fn){
     
     let line = CodeLine.cloneNode(true) 
@@ -1985,13 +2033,14 @@ function createRecord(com,fn){
             line.textContent=sl+"You've typed wrong an Nice number of times ^_+ " 
         }else{
         line.textContent=sl+"No Dummy, \""+com +"\" Is Not Recognised As A Valid Command"  
+        
         }
         
     }
     else if(fn=="list"){
         List()
     }else if(fn=="print"){
-        line.textContent=sl+com 
+        
     }else if(fn=="empty"){
         line.textContent=sl
     }else if(fn=="light"){
@@ -2006,6 +2055,8 @@ function createRecord(com,fn){
     if(fn!="error"){
         errNum=0
     }
+
+    
 
     terminal.appendChild(line)
 }
@@ -2035,6 +2086,10 @@ function List(){
 
     line = CodeLine.cloneNode(true) 
     line.textContent=sl+sl+"    rick" 
+    terminal.appendChild(line)
+
+    line = CodeLine.cloneNode(true) 
+    line.textContent=sl+sl+"    donut" 
     terminal.appendChild(line)
 }
 function join(){

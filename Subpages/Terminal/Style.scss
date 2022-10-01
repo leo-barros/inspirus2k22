@@ -8,6 +8,7 @@
     ::-webkit-scrollbar{
         display: none;
     }
+    scroll-behavior:smooth;
 }
 body{
     background: var(--bg);
@@ -37,14 +38,7 @@ body{
     
  transition: filter .5s,opacity .3s .1ms;
     overflow: scroll;  
-    .active{
   
-        &::after{
-            content: '_';
-            animation: cursor_blink .8s ease-in-out 0s infinite;
-            
-        }
-    }
 }
 input{
 
@@ -68,15 +62,13 @@ input{
 
 }
 
-@keyframes cursor_blink {
-    0%,100%,25%{
-        opacity: 100%;
-    }
-    50%,75%{
-        opacity: 0%;
-    }
-}
+
 .logo{
     font-size:1vw;
   word-wrap: none;
+}
+
+.rick{
+    font-size: min(1.5vw,2.3vh);
+    
 }
