@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+}
+
+#particles-js{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y:hidden ;
+    /* background: linear-gradient(-140deg, #140088, #000000, #022f91, #c70496); */
+    background: rgb(0, 0, 31);
+	background-size: 400% 400%;
+	animation: gradient 9s ease infinite;
+    z-index: 0;
+    position: fixed;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

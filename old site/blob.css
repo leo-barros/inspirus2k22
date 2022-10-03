@@ -1,0 +1,130 @@
+
+  
+  .blob {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20rem;
+      z-index: 3;
+      border-radius: 50%;
+      flex-shrink: 0;
+      height: 40rem;
+      width: 40rem;
+      vertical-align: middle;
+      align-self: center;
+    /* background: linear-gradient(-45deg, #283aff,#ff55d7); */
+    background: linear-gradient(-45deg, #c44baf,#358fc4);
+	background-size: 400% 400%;
+    border-radius: 50rem;
+    /* box-shadow: 0px 0px 40px aqua; */
+    animation: blob 5s linear alternate infinite, gradient 9s ease infinite;
+
+  }
+
+/* Blob color classes */
+  .blob_green{
+  
+  background: linear-gradient(-45deg, #23db23,#063896);
+background-size:200% 200% ;
+  border-radius: 50rem;
+  animation: blob 3s linear alternate infinite, gradient 5s ease infinite;
+
+}
+
+.blob_red{
+  
+  background: linear-gradient(-85deg, #db8523,#2600ff);
+background-size:200% 200% ;
+  border-radius: 50rem;
+  animation: blob 3s linear alternate infinite, gradient 5s ease infinite;
+
+}
+
+.blob_pink{
+  
+  background: linear-gradient(-45deg, #9800c7,#f10000);
+background-size:200% 200% ;
+  border-radius: 50rem;
+  animation: blob 3s linear alternate infinite, gradient 5s ease infinite;
+
+}
+
+
+.blob_grey{
+  
+  background: linear-gradient(-95deg, #000000,#ffffff);
+background-size:200% 200% ;
+  border-radius: 50rem;
+  animation: blob 3s linear alternate infinite, gradient 5s ease infinite;
+
+}
+
+.blob_yellow{
+  
+  background: linear-gradient(-55deg, #f3f700,#960649);
+background-size:200% 200% ;
+  border-radius: 50rem;
+  animation: blob 3s linear alternate infinite, gradient 5s ease infinite;
+
+}
+
+ 
+/* end of blob color classes*/
+
+.event-svg{
+    width: 40rem;
+    height: auto;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes blob {
+    0% {
+      border-radius: 40% 50% 40% / 50% 40% 50%;
+    }
+    20% {
+      border-radius: 50% 40% 50% / 40% 50% 40%;
+    }
+    40% {
+      border-radius: 40% 50% 40% / 50% 40% 50%;
+    }
+    60% {
+      border-radius: 50% 40% 50% / 40% 50% 40%;
+    }
+    80% {
+      border-radius: 40% 50% 40% / 50% 40% 50%;
+    }
+    100% {
+      border-radius: 50% 40% 50% / 40% 50% 40%;
+    }
+    
+  }
+  @media (max-width: 900px) {
+
+    .blob{
+        width:25rem;
+        height: 25rem;
+        font-size: 10rem;
+    }
+    .event-svg{
+        width:20rem;
+    }
+  }
