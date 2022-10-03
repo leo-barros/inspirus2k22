@@ -1,0 +1,47 @@
+.right .card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.bottom .card h2{
+    font-size: 1.5rem;
+    color: black;
+}
+.bottom .card h1{
+    color: black;
+}
+.bottom .card{
+    background: white;
+    margin: 1rem;
+}
+h3{
+    font-weight: 500;
+}
+
+.timing{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    align-self: flex-end;
+
+}
+.speakers-container{
+    margin: auto;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main,.main-para{
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .speakers-container{
+        flex-wrap: wrap;
+    }
+    .event-details{
+        margin-bottom: 4rem;
+    }
+}

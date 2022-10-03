@@ -1,0 +1,137 @@
+
+  
+
+  .cards-container{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 5rem;
+ 
+  }
+  .center {
+    margin: auto;
+  }
+  
+  .card {
+    position: relative;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    min-height: 30rem;
+    margin: 2rem;
+    background-color: #fff;
+    /* background: linear-gradient(#0f358894, rgba(68, 202, 212, 0.623)); */
+    backdrop-filter: blur( .25rem );
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+  }
+  .sub-header{
+    margin: auto;
+    margin-top: 10rem;
+    width: 100vw;
+    position: relative;
+    font-weight: 800;
+    font-size: 6rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+  
+  .sub-header hr{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid rgb(0, 238, 255);
+    width: 95%;
+  }
+  .card img {
+    width: 60%;
+    height: auto;
+    border: solid 8px #eaeaea;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .card h1 {
+      font-size: 2rem;
+    margin: 0.6rem 0 0 0;
+    text-align: center;
+ 
+  }
+  .card h2 {
+    margin-top: 0;
+    text-align: center;
+    
+    font-weight: 300;
+  }
+  .whatsapp{
+      width: 20rem;
+      height: auto;
+      border-radius: 1rem;
+      text-align: center;
+      background-color: #25d366;
+  }
+
+
+  .linkedinx{
+    width: 20rem;
+    height: auto;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #003bdd;
+}
+.linkedinx:hover{
+  background-color: rgb(53, 53, 53);
+}
+  .social-container {
+    display: flex;
+    justify-content: center;
+  }
+  .social-container a {
+    border-radius: 50%;
+    font-size: 3rem;
+    padding: 1rem;
+    color: rgb(214, 214, 214);
+    transition: 0.2s;
+  }
+
+  
+  .social-container a:hover {
+    color: #000;
+  }
+  .social-container a.twitter:hover {
+    color: #1da1f2;
+  }
+  .social-container a.linkedin:hover {
+    color: #0e76a8;
+  }
+  .whatsapp:hover {
+    color: #25d366;
+    background-color: black;
+    transition: 0.2s;
+  }
+
+  @media (max-width: 900px) {
+    .cards-container{
+      width: 95%;
+    }
+    .card{
+      width: 28rem;
+    
+    }
+    .sub-header{
+      width: 100vw;
+      font-size: 3rem;
+    }
+    .card h1 {
+      font-size: 3rem;
+    }
+    .card h2 {
+    }
+
+  }
