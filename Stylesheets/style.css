@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* ::-webkit-scrollbar {
+  display: none;
+}
+
 /* nav style start*/
 .navbar {
   width: 100%;
@@ -69,7 +73,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: rgb(255, 255, 255);
   max-width: 100vw;
-  overflow-x: hidden;
   background: black;
 }
 
@@ -102,22 +105,6 @@ body {
   border-radius: 1rem;
   color: rgb(255, 255, 255);
   padding: 1rem;
-  /* background: #ccd9e9; 
-  background: -webkit-linear-gradient(
-    to right,
-    #0060de,
-    #d0e1f7
-  );
-  background: linear-gradient(
-    to right,
-    #007ade,
-    #d5dce6
-  ) 
-
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 5s ease infinite; */
 }
 
 @-webkit-keyframes gradient {
@@ -189,11 +176,9 @@ body {
   font-size: 2rem;
   padding: 2rem;
   font-weight: 300;
-  background-color: rgba(255, 255, 255, 0.123);
+  background-color: rgba(255, 255, 255, 0.03);
   padding: 3rem;
   border-radius: 1rem;
-  border: 0.1rem solid rgba(255, 255, 255, 0.089);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(36, 36, 36, 0.74);
   backdrop-filter: blur(0.45rem);
   -webkit-backdrop-filter: blur(0.45rem);
   margin-top: 0.7rem;
@@ -211,13 +196,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: -20rem;
-  background-color: rgba(255, 255, 255, 0.123);
+  background-color: rgba(255, 255, 255, 0.03);
   padding: 2rem;
   padding-left: 30rem;
   border-radius: 1rem;
-  border: 0.1rem solid rgba(255, 255, 255, 0.089);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(36, 36, 36, 0.74);
-  backdrop-filter: blur(0.45rem);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(0.45rem);
 }
 
@@ -376,9 +359,17 @@ body {
   padding: 2rem;
   border-radius: 1rem;
   background: #228aec;
+  transition: background-color 0.5s;
   /* box-shadow:  2px -2px 7px #1f93d7,
                  -2px 2px 7px #10419b;
      */
+}
+
+.page-link:hover {
+  background: linear-gradient(45deg, #e6e6e6, #ffffff);
+  box-shadow: 4px -4px 10px #e8e8e8, -4px 4px 10px #ffffff;
+  color: black;
+  font-weight: bold;
 }
 
 .download-button {
@@ -392,13 +383,6 @@ body {
   border-radius: 2rem;
   background: #228aec;
   width: 80%;
-}
-
-.page-link:hover {
-  background: linear-gradient(45deg, #e6e6e6, #ffffff);
-  box-shadow: 4px -4px 10px #e8e8e8, -4px 4px 10px #ffffff;
-  color: black;
-  font-weight: bold;
 }
 
 .mm {
@@ -419,7 +403,7 @@ body {
 
 /*Footer Start*/
 .footer {
-  height: 40%;
+  min-height: 40%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -524,7 +508,8 @@ body {
     width: 11rem;
   }
   .menu-icon {
-    width: rem;
+    color: #ffffff;
+    width: 1rem;
   }
   nav ul {
     width: 100%;
@@ -733,11 +718,9 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.123);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(36, 36, 36, 0.74);
+  background-color: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(0.45rem);
   -webkit-backdrop-filter: blur(0.45rem);
-  border: 0.1rem solid rgba(255, 255, 255, 0.089);
 }
 
 .event-cardx h2 {
