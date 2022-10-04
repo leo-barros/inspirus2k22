@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,800&display=swap');
+
+
+#PersonCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 1rem;
+    border: purple .15rem solid;
+    background: #050505;
+    #PersonDP{
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border-radius: 50%;
+            width: 9rem;
+            height: 9rem;
+        }
+    }
+    #PersonDetails{
+        height: 4rem;
+        border-radius: 1rem;
+        width: 90%;
+        background: #0A0A0A;
+        color: aliceblue;
+        font-size: 40%;
+        font-weight: 10;
+    }
+}
