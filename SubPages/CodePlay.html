@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+    <link rel="stylesheet" href="../Stylesheets/particles.css">
+    <link rel="stylesheet" href="../Stylesheets/blob.css">
+    <link rel="stylesheet" href="../Stylesheets/style.css">
+    <link rel="stylesheet" href="../Stylesheets/contact-card.css">
+    <link rel="stylesheet" href="../Stylesheets/event2.css">
+    <link rel="stylesheet" href="../Stylesheets/social-buttons.css">
+
+
+    <title>Code Play:Inspirus 2022</title>
+</head>
+
+<body>
+
+    <div id="P-cont">
+        <div id="particles-js"></div>
+    </div>
+    <script src="../Scripts/Particles/particles.js"></script>
+    <script src="../Scripts/Particles/app.js"></script>
+    <!-- nav start-->
+
+    <script src="../Scripts/navbar.js"></script>
+    <div class="navbar" id="navB">
+        <a href="../index.html" id="NavBLG">
+
+            <img src="../Media/Logos/main-logo.png" alt="Inspirus 2022" class="logo">
+        </a>
+
+        <nav>
+            <ul id=menuList>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../SubPages/team_2022.html">TEAM</a></li>
+            </ul>
+        </nav>
+
+        <span class="material-symbols-outlined" id="colorSwitcher" onclick="ColorScheme()">
+
+        </span>
+
+        <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()">
+            menu
+        </span>
+        <a href="../SubPages/Terminal/Terminal.html"><span class="material-symbols-outlined"
+                style=" font-variation-settings:'FILL' 0,'wght' 400;">
+                terminal
+            </span></a>
+
+    </div>
+
+    <!-- nav end-->
+
+
+    <div class="event-title">Code Play</div>
+    <!-- <div class="helper-title">POWERED BY:</div>
+    <div class="sponsors">
+        <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
+            <a href="https://www.instagram.com/green_alchemist_nursery"> <img src="images\helpers\green.png" alt=""></a>
+        </div>
+    </div>
+    <div class="helper-container">
+        <div class="helper-title">SPONSORED BY:</div>
+        <div class="sponsors">
+            <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
+                <a href="https://oneshield.com/about/"><img src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a>
+            </div>
+            <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
+                <a href="https://kilowott.com/"><img src="images\helpers\kilowott.png" alt="Kilowott"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <img src="images\undraw_pair_programming_njlp.svg" alt="" class="illustration"> -->
+
+    <!-- <div class="helper-title" style="margin-top: -1rem;"> <i> Sponsored By </i> <hr> </div> 
+<hr>    
+  </div>
+
+<div class="sponsorsa" style="width:60%">
+    <div class="sponsora-logo"><a href="https://oneshield.com/about/"><img style="width:80%" src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
+    <div class="sponsora-logo"><a href="https://kilowott.com/"><img style="width:80%; height:89%;  margin-top:-.7rem;" src="images\helpers\kilowott.png" alt="Kilowott"></a></div>
+  </div>
+
+    <div class="helper-title" style="margin-left: -.4rem;"> <i> Event Powered By </i> <hr> </div>
+<div class="sponsors" style="width: 90%;">
+    <div class="siliconx" style="width: 40%; height:40%"><a href="https://www.instagram.com/green_alchemist_nursery"> <img src="images\helpers\green.png" alt=""></a></div>
+</div> -->
+
+
+    <div class="main">
+        <div class="main-para">
+            <div class="rules">
+                <div class="top">
+                    <div class="sub-title">Eligibility Criteria</div>
+                    <ul>
+                        <li>Students from High School, Higher Secondary, Undergraduate and Diploma from professional non-professional institutions.</li>
+                    </ul>
+                </div>
+                <div class="bottom">
+
+                    <div class="sub-title">Rules</div>
+                    <ul>
+                        <li>The students participating should be from the same institution (Interdepartmental teams allowed).
+                        </li>
+                        <li>A PC with Microsoft Visual Studio installed for C/C++ will be provided to each team.</li>
+                        <li>This event will have the teams of 2 participants each divided as coders and players. So each team will consist of a coder and a player.</li>
+                        <li><u>Coders:</u>They will be required to generate the expected outputs for the given problem statements.
+                        </li>
+                        <li><u>Players:</u>They will compete in mini games (simple games like, minute to win it and other fun games).</li>
+                        <li><b>Round 1:</b> - The coders have to frame the logic for some simple problem statements, code it and submit. Simultaneously the second player will compete in an obstacle course of mini games. The time taken by both the coders and
+                            players will be added together. The top 12 with the fastest time and efficient working codes will be considered for the next round.
+                        </li>
+                        <li><b><u>Time Duration:</u></b></li>
+                        <li>For the obstacle course:10 minutes <br> For coding: 45 minutes</li>
+                        <li><b>Round 2:</b> - The problem statement will be divided into many parts. The players will have to retrieve each part of the problem statement one at a time through various mini games and hand it over to their partners until the
+                            complete problem statement is formed. The coders will simultaneously be coding while receiving each of the parts of the problem statement. Points will be assigned to each of the teams based on their final codes. The Top 6 with
+                            the highest points will progress to the next round.</li>
+                        <li><b><u>Time Duration: </u></b>45 mins</li>
+
+                        <li><b>Round 3:</b> - This will be the toughest round where the top 6 teams will compete to win. In this round both the coders and players will compete together in 2 person games and will have to collectively work on the problem statement
+                            given, both the team members will have to code. This round will have many suprise elements and the complete procedure of this round will be disclosed only on the day of the event.
+                        </li>
+                        <li><b><u>Time Duration: </u></b>45 mins</li>
+
+                        <li>In case a tie arises between teams, a tie breaker round will be conducted to select the winner.
+                        </li>
+                        <li>Note: 15 minute breaks will be provided after each round.</li>
+                        <li>Total Time Duration: 3 hrs</li><br>
+                        <li><b>Rounds 2 and 3 depend on the no. of participants, any changes will be conveyed to the
+                                applicants. </b></li>
+                    </ul>
+
+                </div>
+                <div class="bottom">
+
+                    <div class="sub-title">Judging Criteria</div>
+                    Logic, Accuracy, Indentations, Readability, Implementation, Speed. <br>Skills required:Speed, hand eye coordination, agility, creativity, promptness, basic knowledge in c and c++.
+
+                </div>
+
+
+            </div>
+            <div class="right">
+                <div class="event-details">
+                    <div class="event-details-header ">Event Details</div>
+                    <span class="event-details-section">AKA:</span> Fun coding challenges and mini games<br>
+                    <span class="event-details-section">📅 Date :</span>3rd November<br>
+                    <span class="event-details-section">🕒Time :</span>2pm - 5pm<br>
+                    <span class="event-details-section">📍 Venue : </span>C1, C2 and FE Comp<br>
+                    <span class="event-details-section">Team Members :</span> 1 team per College/ 2 participants per team. <br>
+
+
+                </div>
+                <div class="event-details prizes">
+                    <div class="event-details-header ">Prizes</div>
+                    <span>🥇</span>
+                    <span class="event-details-section">1st:</span> Rs 4000<br><span>🥈</span>
+                    <span class="event-details-section">2nd :</span>Rs 2000<br>
+
+                </div>
+                <div class="card">
+                    <img src="images\druvi4.jfif" />
+                    <h1>Marisa Gilda Barreto</h1>
+                    <h2>Event Co-ordinator</h2>
+                    <div class="social-container">
+                        <a href="https://api.whatsapp.com/send/?phone=917038962070">
+                            <div class="whatsapp">
+                                <i class="fa fa-whatsapp" style="color:white"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images\druvi4.jfif" />
+                    <h1>Kezia Margaret Fernandes</h1>
+                    <h2>Event Co-ordinator</h2>
+                    <div class="social-container">
+                        <a href="https://api.whatsapp.com/send/?phone=91960461775">
+                            <div class="whatsapp">
+                                <i class="fa fa-whatsapp" style="color:white"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0orexS4STalHMckXpT7TKursQRF-NnQV6osTvyUMjkkgc8A/viewform?chromeless=true">
+                    <div class=" register-button">Register</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+        <div class="foot-L">
+            <img src="../Media/Images/dbce_logo.png" alt="dbce" class="dbce-logo">
+            <br>
+            <img src="../Media\Logos\main-logo.png" alt="Inspirus 2022" class="inspirus-logo">
+            <div class="footer-text-left">
+
+                All team members participating in offline (in-person) events should carry their vaccination certificate (hard copy or soft copy) otherwise they will have to sign a declaration.
+                <br> Wearing a mask is strictly compulsory!<br><br>
+                <span style="font-weight: 600;">Instagram:</span> @inspirusdbce<br>
+                <span style="font-weight: 600;">Facebook:</span> @Inspirus<br>
+                <span style="font-weight: 600;">twitter:</span> @inspirus2k21<br>
+
+            </div>
+            <ul class="ul1">
+                <li><a href="https://www.instagram.com/inspirusdbce/"><i class="fa fa-instagram fa-lg"
+                            style="font-size: 0.73em;"></i></a></li>
+                <li><a href="https://m.facebook.com/inspirusdbce/"><i class="fa fa-facebook-square fa-lg"
+                            style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/Inspirus2k21"><i class="fa fa-twitter fa-lg" style="font-size: 0.73em;"
+                            aria-hidden="true"></i></a></li>
+
+
+            </ul>
+            <!-- <div class="contact"> 
+              <ul class="list" ">
+                <li> <img src="images/phone.png"></li>  
+                <li><img src="images/insta.png"></li> 
+                <li><img src="images/fb.png"></li> 
+              </ul>
+            
+          </div>-->
+        </div>
+
+        <div class="foot-r">
+            <!-- <div class="section-header">Sponsored by:
+                <hr>
+            </div>
+            <br>
+            <div class="all" style="margin-left: 2rem;">
+                <div class="sponsorsa">
+                    <div class="sponsora-logo">
+                        <a href="https://oneshield.com/about/"><img style="width:80%" src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a>
+                    </div>
+                    <div class="sponsora-logo">
+                        <a href="https://kilowott.com/"><img style="width:80%; height:89% ;  margin-top:-.7rem;" src="images\helpers\kilowott.png" alt="Kilowott"></a>
+                    </div>
+                    <div class="sponsora-logo">
+                        <a href="https://www.creativecapsule.com/"><img style="width:80%;height: 58%; margin-top: .2rem;" src="images\helpers\CC_logo.jpg" alt="Creative Capsule"></a>
+                    </div>
+                </div>
+                <div class="sponsorsa">
+                    <div class="sponsora-logo">
+                        <a href="https://www.siliconcortech.com/"><img style="width:80%;margin-top: .2rem;" src="images\helpers\silicon.jpeg" alt="Silicon Cortech"></a>
+                    </div>
+                    <div class="sponsora-logo">
+                        <a href="http://realdrinks.in/"><img style="width:80% ; height: 80%;" src="images\helpers\real.png" alt="Real Drinks"></a>
+                    </div>
+                    <div class="sponsora-logo">
+                        <a href="https://www.instagram.com/green_alchemist_nursery"><img style="width:60%; height:85% ; margin-left: 1rem; margin-top:.2rem;" src="images\helpers\green.png" alt="Green Alchemist"></a>
+                    </div>
+                    <div class="sponsora-logo">
+                        <a href="http://www.tgfdreamguesthouse.com/"><img style="width:80%;height: 58%;" src="images\helpers\tgf.jpg" alt="TGF Guest House"></a>
+                    </div>
+
+                </div>
+
+
+                <br>
+
+            </div> -->
+            <div class="map">
+                <iframe frameborder="2" scrolling="no" src="https://maps.google.com/maps?width=10%25&amp;height=400&amp;hl=en&amp;q=Dbce+(Don%20Bosco%20College%20of%20Engineering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+        <script>
+            AOS.init();
+
+
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu() {
+                if (menuList.style.maxHeight == "0px") {
+                    menuList.style.maxHeight = "130px";
+                } else {
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+</body>
+
+</html>
