@@ -24,7 +24,8 @@ body{
 /*team container*/
 .team{
 
-    padding: 0px;
+margin-top: 6rem;
+margin-bottom: 7rem;
     text-align: center;
 
     display: flex;
@@ -33,26 +34,15 @@ body{
     flex-wrap: wrap;
     gap: 2rem;
 }
-.card
-{
- 
 
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.373);
-    border-radius: .2rem;
-    padding-top: 20px;
-
-}
 .member{
-    height: auto;
-
+ 
     width:20rem;
-    min-height: 25rem;
-
+    min-height: 32rem;
     border-radius: 4rem 4rem 0rem 0rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 transition: 400ms;
 }
 .card{
@@ -64,22 +54,26 @@ transition: 400ms;
 }
 
 .dp{
+  
     
     width: 100%;
     border-radius: inherit;
 }
 .name{
-
-  
-    font-family: "Poppins", sans-serif;
-
+    font-weight: 900;
+   
     font-size: 1.6rem;
 
+}
+.role{
+
+    font-weight: 300;
+    font-size: 1.4rem;
 }
 .title{
     color: rgb(255, 255, 255);
     margin-left: 60px;
-     font-family: "Poppins", sans-serif;
+
     font-size: 25px;
     z-index: 0;
     padding: 20px 0px 0px 0px;
@@ -92,4 +86,18 @@ font-weight: 300 !important;
 
 .section-header hr{
     border: .1px solid black !important;
+}
+
+.SocialButton{
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    background: rgb(220, 220, 220);
+    padding: .5rem 5rem;
+    transition: 400ms;
+    
+}
+
+.SocialButton:hover{
+    background: rgb(0, 123, 255);
 }
