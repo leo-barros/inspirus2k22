@@ -5,24 +5,31 @@ html {
 }
 .material-symbols-outlined {
   font-variation-settings:
-  'FILL' 0,
+  'FILL' 1,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48;
    color: var(--text);
+   margin-right: 2rem;
+   cursor: pointer;
 }
 :root {
-  --NavColor:black;
+  --NavColor:rgba(0, 0, 0, 0);
   --bg:#ffffff;
-  --text:#ffffff;
+  --text:#000000;
+  --textCard:black;
   --black:#000000;
   --radius:.2rem;
-  --cardColor:rgba(21, 21, 21, 0.402);
+  --cardColor:rgba(255, 255, 255, 0.2);
+  --thickness:.2rem;
+  --HRColor:rgba(0, 0, 0, 0.26);
+  --accent:rgb(252, 0, 231);
+  --accent2:rgb(0, 0, 0);
 
 }
 
 * ::-webkit-scrollbar {
-  display: none;
+  display: none
 }
 
 /* nav style start*/
@@ -69,19 +76,15 @@ nav ul li {
 nav ul li a {
 
   border-radius: var(--radius);
-  color: rgb(255, 255, 255);
+  color: var(--text);
   padding: 1rem !important;
   transition: all 150ms;
   font-size: 1.7rem;
 }
-
-nav ul li a:hover {
-
-
-  color: black;
-  background-color: var(--bg);
- 
+nav ul li a:hover{
+  color: #ffffff;
 }
+
 
 /*nav end*/
 
@@ -156,7 +159,7 @@ body {
   justify-content: space-around;
   flex-direction: row;
   padding-top: 2.4rem;
-  color: white;
+  color: var(--text);
 }
 
 .event-head {
@@ -173,21 +176,22 @@ body {
   text-align: center;
   -webkit-backdrop-filter: blur(0rem);
   backdrop-filter: blur(0rem);
-  color: rgb(255, 255, 255);
+  color: var(--text);
   font-size: 7rem;
   font-weight: bold;
   margin-top: 2rem;
 }
 
 .section-header hr {
-  border: 1px solid rgb(0, 238, 255);
+  border: var(--thickness) solid var(--HRColor);
+  border-radius: 100vw;
   margin: auto;
   width: 80%;
   padding: 0;
 }
 
 .about-card {
-  color: white;
+  color: var(--textCard);
   width: 80%;
   border-radius: 0.5rem;
   margin: auto;
@@ -203,12 +207,12 @@ body {
 }
 
 .about-card b {
-  font-weight: 600;
+  font-weight: 100000;
 }
 
 /*End of Heading*/
 .event-card {
-  color: white;
+  color: var(--textCard);
   display: flex;
   z-index: 1;
   flex-direction: row;
@@ -233,7 +237,7 @@ body {
 }
 
 .sponsors {
-  color: white;
+  color: var(--textCard);
   position: relative;
   width: 84%;
   display: flex;
@@ -361,14 +365,16 @@ body {
   color: white;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: rgb(172, 38, 172);
+  background-color: var(--accent);
+  transition: 300ms;
 }
 
 .register-button:hover {
-  background: linear-gradient(45deg, #e6e6e6, #ffffff);
-  box-shadow: 3px -4px 10px #e8e8e8, -4px 4px 10px #ffffff;
+
   color: black;
-  font-weight: bold;
+
+  color: black;
+  background: #ffffff;
 }
 
 .page-link {
@@ -376,18 +382,17 @@ body {
   color: white;
   padding: 2rem;
   border-radius: 1rem;
-  background: #228aec;
-  transition: background-color 0.5s;
+  background: var(--accent2);
+  transition: 300ms;
   /* box-shadow:  2px -2px 7px #1f93d7,
                  -2px 2px 7px #10419b;
      */
 }
 
 .page-link:hover {
-  background: linear-gradient(45deg, #e6e6e6, #ffffff);
-  box-shadow: 4px -4px 10px #e8e8e8, -4px 4px 10px #ffffff;
+
   color: black;
-  font-weight: bold;
+  background: #ffffff;
 }
 
 .download-button {
@@ -401,8 +406,11 @@ body {
   border-radius: 2rem;
   background: #228aec;
   width: 80%;
+  transition: 300ms;
 }
-
+.download-button:hover{
+  background: #0007de;
+}
 .mm {
   margin-left: 36%;
 }
@@ -410,7 +418,8 @@ body {
 .event-text {
   font-size: 1.6rem;
   font-weight: 400;
-  color: white;
+  color: var(--textCard);
+
   padding: 0.2rem;
 }
 
@@ -523,7 +532,7 @@ body {
     width: 11rem;
   }
   .menu-icon {
-    color: #ffffff;
+    color: var(--text);
     max-width: 5vw;
  
   }
@@ -547,15 +556,17 @@ body {
   }
  
   nav ul li a {
-    color: white;
+    color: var(--text);
     font-size: 2rem;
     padding: 0.1rem;
     margin-right: -2rem;
   }
+
+
   .menu-icon {
     user-select: none;
     display: block;
-    margin-right: 2rem;
+    
   }
   #menuList {
     background: var(--NavColor);
@@ -711,37 +722,40 @@ body {
 }
 /*Time line*/
 .eventx {
+  
   padding-top: 2rem;
   margin: auto;
-  color: white;
+  color: var(--text);
 }
 
 .timeline {
+  
   list-style-type: none;
   display: flex;
   align-items: center;
-  margin: auto;
+
   margin-top: 2rem;
 }
 
 .event-cardx {
-  width: 75%;
+
   margin: auto;
   display: flex;
   z-index: 1;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 3rem;
-  border-radius: 1rem;
+  border-radius: var(--radius);
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: var(--cardColor);
+
   backdrop-filter: blur(0.45rem);
   -webkit-backdrop-filter: blur(0.45rem);
 }
 
 .event-cardx h2 {
+  
   padding-top: 0;
   margin-top: 0;
   margin: auto;
@@ -750,7 +764,7 @@ body {
 }
 
 .li {
-  transition: all 200ms ease-in;
+  transition: all 100ms ease-in;
 }
 
 .timestamp {
@@ -763,14 +777,14 @@ body {
 
 .date {
   font-size: 2rem;
-  color: white;
+  color: var(--textCard);
 }
 
 .status {
   padding: 0rem 2rem;
   display: flex;
   justify-content: center;
-  border-top: 0.2rem solid #d6dce0;
+  border-top: 0.4rem solid var(--text);
   position: relative;
   transition: all 200ms ease-in;
 }
@@ -794,7 +808,7 @@ body {
 }
 
 .li.complete .status {
-  border-top: 0.2rem solid #ffffff;
+  border-top: 0.2rem solid --textCard;
 }
 
 .li.complete .status:before {
@@ -806,7 +820,7 @@ body {
 }
 
 .li.complete .status h4 {
-  color: #ffffff;
+  color: --textCard;
   padding: 1rem;
 }
 

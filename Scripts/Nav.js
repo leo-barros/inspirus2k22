@@ -27,7 +27,7 @@ if(window.innerWidth>900){
 
 
 window.addEventListener('resize', SetMaxHeight);
-window.addEventListener('mousemove', SetMaxHeight);
+
 
 togglemenu()
 togglemenu()
