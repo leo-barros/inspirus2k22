@@ -58,7 +58,7 @@
        </ul>
   </nav>
 
- <span class="material-symbols-outlined menu-icon"  onclick="togglemenu()" >
+ <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()" >
   menu
   </span>
 
@@ -462,18 +462,36 @@ Register today and find out the answer for yourself by putting your team against
     <script>
         AOS.init();
 
-    
-     var menuList =document.getElementById("menuList");
-     menuList.style.maxHeight ="0px";
+      
+     const menuList =document.getElementById("menuList");
+
+     const mB=document.getElementById("MENUBUTTON");
+
+  
      function togglemenu(){
+      console.log(menuList.style.maxHeight)
           if(menuList.style.maxHeight =="0px")
           {
+              mB.textContent="close"
                menuList.style.maxHeight ="130px";
           }
           else{
+               mB.textContent="menu"
                menuList.style.maxHeight ="0px";
           }
      }
+     function SetMaxHeight(){
+    
+     if(window.innerWidth>900){
+      menuList.style.maxHeight ="130px";
+     }else{
+      menuList.style.maxHeight ="0px";
+      mB.textContent="menu"
+     }
+     }
+     
+
+     window.addEventListener('resize', SetMaxHeight);
 </script>
 
 </body>

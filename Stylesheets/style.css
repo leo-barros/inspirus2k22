@@ -12,6 +12,7 @@ html {
    color: var(--text);
 }
 :root {
+  --NavColor:black;
   --bg:#ffffff;
   --text:#ffffff;
   --black:#000000;
@@ -26,8 +27,9 @@ html {
 
 /* nav style start*/
 .navbar {
-  opacity: 100;
-  background: #000000;
+
+  background: var(--NavColor);
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -46,8 +48,11 @@ html {
   display: none;
 
 }
-
+#menuList{
+  max-height: 130px;
+}
 nav {
+
   flex: 1;
   text-align: right;
   z-index: 2;
@@ -522,8 +527,8 @@ body {
   }
   nav ul {
     width: 100%;
-    
-    background-color: var(--black);
+    backdrop-filter: blur(10px);
+
     position: absolute;
 
     top: 5rem;
@@ -535,6 +540,7 @@ body {
     display: block;
     margin-top: 1rem;
     text-align: center;
+   
    
   }
  
@@ -549,6 +555,8 @@ body {
     margin-right: 2rem;
   }
   #menuList {
+    background: var(--NavColor);
+    max-height: 0px;
     overflow: hidden;
     transition: 0.5s;
   }
