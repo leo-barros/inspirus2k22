@@ -295,8 +295,8 @@ var pJS = function(tag_id, params){
        // r: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
         //g: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
         //b: (Math.floor(Math.random() * (255 - 0 + 1)) + 0)
-        r:(Math.floor(Math.random() * (255-80+1))),
-        g:(Math.floor(Math.random() * (255-80+1))),
+        r:(Math.floor(Math.random() * (255))),
+        g:(Math.floor(Math.random() * (255))),
         b:(Math.floor(Math.random() * (255)))
       }
     }
