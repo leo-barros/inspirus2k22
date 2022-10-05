@@ -472,11 +472,12 @@ color: #000000;
 }
 
 .inspirus-logo {
-  width: 30%;
-  height: 10%;
+  width: 25rem;
+  
 }
 
 .footer-text-left {
+  color: white;
   font-size: 1.6rem;
   padding: 0.8rem;
 }
@@ -485,7 +486,7 @@ color: #000000;
   align-self: baseline;
   justify-self: space-around;
   width: 60rem;
-  height: 10rem;
+  height: 20rem;
   border-radius: 2rem;
 }
 

@@ -19,8 +19,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 10rem;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
 }
 .gradient-text {
   -webkit-background-clip: text;
@@ -30,7 +29,7 @@
   margin-left: 2rem;
 }
 .rules {
-  color: rgb(255, 255, 255);
+  color: black;
   font-size: 1.7rem;
   border-radius: 2rem;
   padding: 2rem;
@@ -41,11 +40,11 @@
 
 .top {
   font-size: 1.6rem;
-  background-color: rgba(255, 255, 255, 0.123);
-  border: 0.1rem solid rgba(255, 255, 255, 0.089);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(36, 36, 36, 0.74);
-  backdrop-filter: blur(0.45rem);
-  -webkit-backdrop-filter: blur(0.45rem);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
   margin-bottom: 2rem;
   border-radius: 2rem;
   padding: 2rem;
@@ -56,17 +55,17 @@
   font-size: 1.7rem;
   margin-top: 1.6rem;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.123);
-  border: 0.1rem solid rgba(255, 255, 255, 0.089);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(36, 36, 36, 0.74);
-  backdrop-filter: blur(0.45rem);
-  -webkit-backdrop-filter: blur(0.45rem);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
   border-radius: 2rem;
   margin-bottom:0% ;
   margin-bottom :2rem;
 }
 .sub-title {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: 600;
 }
@@ -74,14 +73,14 @@
   margin-top: 6.2rem;
 }
 .event-details {
-  height: 23rem;
-  color: rgb(255, 255, 255);
+  height: auto;
+  color: rgb(0, 0, 0);
   width: 30rem;
-  background-color: rgba(255, 255, 255, 0.123);
-  border: 0.1rem solid rgba(255, 255, 255, 0.089);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(36, 36, 36, 0.74);
-  backdrop-filter: blur(0.45rem);
-  -webkit-backdrop-filter: blur(0.45rem);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
   padding: 1.2rem;
   border-radius: 2rem;
   margin: auto;
@@ -116,13 +115,15 @@
 
 .card {
   width: 32.5rem;
+  height: fit-content;
   margin: 0;
-  background-color: rgba(255, 255, 255, 0.123);
-  border: 0.1rem solid rgba(255, 255, 255, 0.089);
-  box-shadow: 0 0.8rem 3.2rem 0 rgba(36, 36, 36, 0.74);
-  backdrop-filter: blur(0.45rem);
-  -webkit-backdrop-filter: blur(0.45rem);
-  color: white;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  color: rgb(0, 0, 0);
 }
 
 .blob_pink,
@@ -136,7 +137,7 @@
 .register-button {
   position: relative;
   margin-top: 2rem;
-  background-size: cover;
+  background-color: rgb(92, 92, 255);
   text-align: center;
   color: white;
   border-radius: 2rem;
