@@ -25,6 +25,7 @@ html {
   --thickness:.2rem;
   --HRColor:rgba(0, 0, 0, 0.26);
   --accent:rgb(252, 0, 231);
+  --accentHover:rgb(255, 255, 255);
   --accent2:rgb(0, 0, 0);
 
 }
@@ -378,11 +379,9 @@ body {
 }
 
 .register-button:hover {
-
-  color: black;
-
-  color: black;
-  background: #ffffff;
+color: #000000;
+  background: var(--accentHover);
+  
 }
 
 .page-link {
