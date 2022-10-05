@@ -54,11 +54,15 @@
   <nav> 
        <ul id=menuList>
             <li><a href="index.html">HOME</a></li>
+<<<<<<< HEAD
             <li><a href="Subpages/team_2022.html">TEAM</a></li>
+=======
+            <li><a href="./SubPages/team_2022.html">TEAM</a></li>
+>>>>>>> 7d9327231587ca2be77b721c4ae5dcc6bb642b8e
        </ul>
   </nav>
 
- <span class="material-symbols-outlined menu-icon"  onclick="togglemenu()" >
+ <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()" >
   menu
   </span>
 
@@ -459,21 +463,12 @@ Register today and find out the answer for yourself by putting your team against
   </div>
   </div>
 <!--End of Footer-->
+<script src="./Scripts/Nav.js"></script>
     <script>
         AOS.init();
 
-    
-     var menuList =document.getElementById("menuList");
-     menuList.style.maxHeight ="0px";
-     function togglemenu(){
-          if(menuList.style.maxHeight =="0px")
-          {
-               menuList.style.maxHeight ="130px";
-          }
-          else{
-               menuList.style.maxHeight ="0px";
-          }
-     }
+      
+
 </script>
 
 </body>
