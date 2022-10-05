@@ -22,60 +22,65 @@ body{
 }
 /*team container*/
 .team{
+    margin-top: 3rem;
+    margin-bottom: 10rem;
     width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
-    z-index: 999;
-    text-align: center;
-    display: inline-flex;
-}
-.mem{
-    width: 25%;
-    height: 100%;
-    z-index: 0;
-    padding: 10px 30px 10px 30px;
-}
-/*
-#r1{
-    background-color: green;
-}
-#r2{
-    background-color: yellow;
-}
-#r3{
-    background-color: pink;
-}
-#r4{
-    background-color: blue;
-}*/
 
-div.card
-{
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.373);
-    border-radius: .2rem;
-    padding-top: 20px;
+    padding: 0px;
+    text-align: center;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
+.member{
+    height: auto;
+
+    width:20rem;
+    min-height: 25rem;
+
+    border-radius: 4rem 4rem 0rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+transition: 400ms;
+}
+.card{
+    border-radius: inherit;
+
+}
+.member:hover{
+    transform: translateY(-1rem);
+}
+
 .dp{
-    height: 12vw;
-    width: auto;
-    border-radius: 100px;
+    
+    width: 100%;
+    border-radius: inherit;
 }
 .name{
-    color: white;
+  
     font-family: "Poppins", sans-serif;
-    padding: 8px 0px 8px 0px;
-    font-size: 3vh;
+
+    font-size: 1.6rem;
 }
 .title{
     color: rgb(255, 255, 255);
     margin-left: 60px;
-    font-family: "Poppins", sans-serif;
+     font-family: "Poppins", sans-serif;
     font-size: 25px;
     z-index: 0;
     padding: 20px 0px 0px 0px;
+}
+
+.section-header{
+font-size: 3rem !important;
+font-weight: 300 !important;
+}
+
+.section-header hr{
+    border: .1px solid black !important;
 }

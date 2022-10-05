@@ -21,13 +21,17 @@ html {
   --black:#000000;
   --radius:.2rem;
   --cardColor:rgba(255, 255, 255, 0.2);
+  --MembercardColor:rgb(255, 255, 255);
   --thickness:.2rem;
   --HRColor:rgba(0, 0, 0, 0.26);
   --accent:rgb(252, 0, 231);
   --accent2:rgb(0, 0, 0);
 
 }
-
+.member{
+  background: var(--MembercardColor);
+  color: var(--text);
+}
 * ::-webkit-scrollbar {
   display: none
 }
