@@ -7,8 +7,6 @@ body{
 .navbar{
     height: auto;
     width: 100%;
-    margin: 0px;
-    z-index: 10000;
     padding: 10px 10px 10px 10px;
     position: relative;
 }

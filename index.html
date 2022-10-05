@@ -54,7 +54,7 @@
   <nav> 
        <ul id=menuList>
             <li><a href="index.html">HOME</a></li>
-            <li><a href="Subpages/team.html">TEAM</a></li>
+            <li><a href="./SubPages/team_2022.html">TEAM</a></li>
        </ul>
   </nav>
 
@@ -459,39 +459,12 @@ Register today and find out the answer for yourself by putting your team against
   </div>
   </div>
 <!--End of Footer-->
+<script src="./Scripts/Nav.js"></script>
     <script>
         AOS.init();
 
       
-     const menuList =document.getElementById("menuList");
 
-     const mB=document.getElementById("MENUBUTTON");
-
-  
-     function togglemenu(){
-      console.log(menuList.style.maxHeight)
-          if(menuList.style.maxHeight =="0px")
-          {
-              mB.textContent="close"
-               menuList.style.maxHeight ="130px";
-          }
-          else{
-               mB.textContent="menu"
-               menuList.style.maxHeight ="0px";
-          }
-     }
-     function SetMaxHeight(){
-    
-     if(window.innerWidth>900){
-      menuList.style.maxHeight ="130px";
-     }else{
-      menuList.style.maxHeight ="0px";
-      mB.textContent="menu"
-     }
-     }
-     
-
-     window.addEventListener('resize', SetMaxHeight);
 </script>
 
 </body>

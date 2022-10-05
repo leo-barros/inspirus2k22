@@ -553,6 +553,7 @@ body {
     margin-right: -2rem;
   }
   .menu-icon {
+    user-select: none;
     display: block;
     margin-right: 2rem;
   }
