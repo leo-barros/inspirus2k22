@@ -9,12 +9,16 @@ html {
   'wght' 400,
   'GRAD' 0,
   'opsz' 48;
-   color: var(--text);
+   color: var(--NavText);
    margin-right: 2rem;
    cursor: pointer;
 }
+.material-symbols-outlined:hover{
+  color: var(--accent) ;
+}
 :root {
-  --NavColor:rgba(0, 0, 0, 0);
+  --NavColor:rgb(0, 0, 0);
+  --NavText:white;
   --bg:#ffffff;
   --text:#000000;
   --textCard:black;
@@ -61,7 +65,10 @@ html {
 .menu-icon {
  cursor: pointer;
   display: none;
-
+  color: var(--NavText) ;
+}
+.menu-icon:hover{
+  color: var(--accent) ;
 }
 #menuList{
   max-height: 130px;
@@ -84,13 +91,13 @@ nav ul li {
 nav ul li a {
 
   border-radius: var(--radius);
-  color: var(--text);
+  color: var(--NavText) !important;
   padding: 1rem !important;
   transition: all 150ms;
   font-size: 1.7rem;
 }
 nav ul li a:hover{
-  color: #ffffff;
+  color: var(--accent) !important;
 }
 
 
@@ -539,7 +546,7 @@ color: #000000;
     width: 11rem;
   }
   .menu-icon {
-    color: var(--text);
+
     max-width: 5vw;
  
   }
@@ -563,7 +570,7 @@ color: #000000;
   }
  
   nav ul li a {
-    color: var(--text);
+ 
     font-size: 2rem;
     padding: 0.1rem;
     margin-right: -2rem;
