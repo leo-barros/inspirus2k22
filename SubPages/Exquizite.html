@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
@@ -28,27 +29,39 @@
     <script src="../Scripts/Particles/app.js"></script>
     <!-- nav start-->
 
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo.png" alt="Inspirus 2021" class="logo"></a>
+    <script src="../Scripts/navbar.js"></script>
+    <div class="navbar" id="navB">
+        <a href="../index.html" id="NavBLG">
+
+            <img src="../Media/Logos/main-logo.png" alt="Inspirus 2022" class="logo">
+        </a>
+
         <nav>
             <ul id=menuList>
-                <li>
-                    <a href="index.html"> <b>HOME</b></a>
-                </li>
-                <li>
-                    <a href="team.html"> <b>TEAM</b></a>
-                </li>
-
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../SubPages/team_2022.html">TEAM</a></li>
             </ul>
         </nav>
-        <img src="images/menu.png" alt="..." class="menu-icon" onclick="togglemenu()">
+
+        <span class="material-symbols-outlined" id="colorSwitcher" onclick="ColorScheme()">
+
+        </span>
+
+        <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()">
+            menu
+        </span>
+        <a href="../SubPages/Terminal/Terminal.html"><span class="material-symbols-outlined"
+                style=" font-variation-settings:'FILL' 0,'wght' 400;">
+                terminal
+            </span></a>
+
     </div>
 
     <!-- nav end-->
 
 
     <div class=" event-title">ExQuizite</div>
-    <div class="helper-title">POWERED BY:</div>
+    <!-- <div class="helper-title">POWERED BY:</div>
     <div class="sponsors">
         <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
             <a href="https://www.instagram.com/green_alchemist_nursery"> <img src="images\helpers\green.png" alt=""></a>
@@ -66,7 +79,7 @@
         </div>
     </div>
     </div>
-    <img src="images\undraw_pair_programming_njlp.svg" alt="" class="illustration">
+    <img src="images\undraw_pair_programming_njlp.svg" alt="" class="illustration"> -->
 
     <!-- <div class="helper-title" style="margin-top: -1rem;"> <i> Sponsored By </i> <hr> </div> 
 <hr>    
@@ -95,14 +108,6 @@
                 </div>
                 <div class="bottom">
 
-                    <div class=" sub-title">Description</div>
-                    <ul>
-                        <li>Knowledge is the key!! Quiz is the game!! ExQuizite is the way you can get fame!!</li>
-                        <li>Sharpen your brains, Gather in the field, Fight for the title!
-                        </li>
-                        <li><i><b>ExQuizite</b></i> is a quiz that will challenge you and test your knowledge of Science and Technology along with General knowledge.</li><br>
-                    </ul>
-
                     <div class=" sub-title">Rules</div>
                     <ul>
                         <li>The students participating should be from a college.</li>
@@ -120,7 +125,12 @@
                     </ul>
 
                 </div>
+                <div class="bottom">
 
+                    <div class="sub-title">Judging Criteria</div>
+                    Logic, Accuracy, Indentations, Readability, Implementation, Speed. <br>Skills required:Speed, hand eye coordination, agility, creativity, promptness, basic knowledge in c and c++.
+
+                </div>
 
             </div>
             <div class="right">
@@ -130,7 +140,8 @@
                     <span class="event-details-section">📅 Date :</span>3rd November 2022<br>
                     <span class="event-details-section">🕒Time :</span>1pm-5pm<br>
                     <span class="event-details-section">Mode of Event:</span> Offline<br>
-                    <span class="event-details-section">📍 Venue : </span>Preliminary round:C8 and C9 Lab(2nd floor),<br> Main round: Seminar hall 1(1st floor)<br>
+                    <span class="event-details-section">📍 Venue : </span>Preliminary round:C8 and C9 Lab(2nd floor),
+                    <br> Main round: Seminar hall 1(1st floor)<br>
                     <span class="event-details-section">Team Members :</span> 2 member per team. <br>
                     <br>
                 </div>
@@ -140,19 +151,6 @@
                     <span class="event-details-section">1st:</span> Rs 4000<br><span>🥈</span>
                     <span class="event-details-section">2nd :</span>Rs 2000<br>
 
-                </div>
-                <div class="card">
-                    <img src="images\druvi4.jfif" />
-                    <h1>Prof. Ankit Kumar Tiwari </h1>
-                    <h2>Faculty in-charge</h2>
-                    <div class="social-container">
-                        <a href="https://api.whatsapp.com/send/?phone=918796608525">
-                            <div class="whatsapp">
-                                <i class="fa fa-whatsapp" style="color:white"></i>
-                            </div>
-                        </a>
-
-                    </div>
                 </div>
                 <div class="card">
                     <img src="images\druvi4.jfif" />
@@ -189,9 +187,9 @@
     <div class="footer">
 
         <div class="foot-L">
-            <img src="images\dbce_logo.png" alt="dbce" class="dbce-logo">
+            <img src="../Media/Images/dbce_logo.png" alt="dbce" class="dbce-logo">
             <br>
-            <img src="images\logo.png" alt="Inspirus 2021" class="inspirus-logo">
+            <img src="../Media\Logos\main-logo.png" alt="Inspirus 2022" class="inspirus-logo">
             <div class="footer-text-left">
 
                 All team members participating in offline (in-person) events should carry their vaccination certificate (hard copy or soft copy) otherwise they will have to sign a declaration.
@@ -222,7 +220,7 @@
         </div>
 
         <div class="foot-r">
-            <div class="section-header">Sponsored by:
+            <!-- <div class="section-header">Sponsored by:
                 <hr>
             </div>
             <br>
@@ -257,7 +255,7 @@
 
                 <br>
 
-            </div>
+            </div> -->
             <div class="map">
                 <iframe frameborder="2" scrolling="no" src="https://maps.google.com/maps?width=10%25&amp;height=400&amp;hl=en&amp;q=Dbce+(Don%20Bosco%20College%20of%20Engineering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>

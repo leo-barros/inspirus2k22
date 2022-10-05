@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
@@ -28,27 +29,39 @@
     <script src="../Scripts/Particles/app.js"></script>
     <!-- nav start-->
 
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo.png" alt="Inspirus 2021" class="logo"></a>
+    <script src="../Scripts/navbar.js"></script>
+    <div class="navbar" id="navB">
+        <a href="../index.html" id="NavBLG">
+
+            <img src="../Media/Logos/main-logo.png" alt="Inspirus 2022" class="logo">
+        </a>
+
         <nav>
             <ul id=menuList>
-                <li>
-                    <a href="index.html"> <b>HOME</b></a>
-                </li>
-                <li>
-                    <a href="team.html"> <b>TEAM</b></a>
-                </li>
-
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../SubPages/team_2022.html">TEAM</a></li>
             </ul>
         </nav>
-        <img src="images/menu.png" alt="..." class="menu-icon" onclick="togglemenu()">
+
+        <span class="material-symbols-outlined" id="colorSwitcher" onclick="ColorScheme()">
+
+        </span>
+
+        <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()">
+            menu
+        </span>
+        <a href="../SubPages/Terminal/Terminal.html"><span class="material-symbols-outlined"
+                style=" font-variation-settings:'FILL' 0,'wght' 400;">
+                terminal
+            </span></a>
+
     </div>
 
     <!-- nav end-->
 
 
     <div class=" event-title">Code Wars</div>
-    <div class="helper-title">POWERED BY:</div>
+    <!-- <div class="helper-title">POWERED BY:</div>
     <div class="sponsors">
         <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
             <a href="https://www.instagram.com/green_alchemist_nursery"> <img src="images\helpers\green.png" alt=""></a>
@@ -66,7 +79,7 @@
         </div>
     </div>
     </div>
-    <img src="images\undraw_pair_programming_njlp.svg" alt="" class="illustration">
+    <img src="images\undraw_pair_programming_njlp.svg" alt="" class="illustration"> -->
 
     <!-- <div class="helper-title" style="margin-top: -1rem;"> <i> Sponsored By </i> <hr> </div> 
 <hr>    
@@ -89,39 +102,33 @@
                 <div class="top">
                     <div class="sub-title">Eligibility Criteria</div>
                     <ul>
-                        <li>Undergraduate and Diploma Students from all professional and non-professional institutions</li>
+                        <li>Undergraduate and Diploma Students from all professional and non-professional institutions
+                        </li>
                     </ul>
                 </div>
                 <div class="bottom">
-
-                    <div class="sub-title">Description</div>
-                    <ul>
-                        <li><code style="color:red ;">while(!(succeed = try()));</code></li><br>
-                        <li>
-                            <q>Programming isn't always about what you know;<br> sometimes it's about what you can figure out!
-                            </q>
-                        </li><br>
-                        <li><i>Code Wars</i> is the ultimate battle to showcase one’s finest programming skills!!</li><br>
-                        <li>You and your companion shall go through fun and exciting challenges testing your logic, debugging and C++ programming skills!!</li>
-                        <li>So what are you waiting for?</li>
-                        <li>Do you have what it takes?</li><br>
-                        <li><code style="color:red ;">if(your_love=="c++")//🌹🌹<br>&nbsp;&nbsp;&nbsp;&nbsp;cout&#60&#60"Participate in &#60Code Wars&#62";</code></li><br>
-                        <li>
-                    </ul>
 
                     <div class="sub-title">Rules</div>
                     <ul>
                         <li>The event is divided into <b>3</b> different rounds
                             <ul>
-                                <li style="list-style:disc;">The exact rules of each round would be informed prior to it</li>
+                                <li style="list-style:disc;">The exact rules of each round would be informed prior to it
+                                </li>
                                 <li style="list-style:disc;">The rounds may include blind coding, competitive coding/logic based questions,code swapping, etc</li>
                             </ul>
                         </li>
                         <li>To ace the event, participants will need basic knowledge of C++ language</li>
                         <li>Maximum 18 teams would be allowed to register</li>
                         <li>All participants must reach the venue (DBCE) by 9am</li>
-                        <li>For any further queries, contact the respective student coordinators (preferably on whatsapp)</li>
+                        <li>For any further queries, contact the respective student coordinators (preferably on whatsapp)
+                        </li>
                     </ul>
+
+                </div>
+                <div class="bottom">
+
+                    <div class="sub-title">Judging Criteria</div>
+                    Logic, Accuracy, Indentations, Readability, Implementation, Speed. <br>Skills required:Speed, hand eye coordination, agility, creativity, promptness, basic knowledge in c and c++.
 
                 </div>
 
@@ -143,19 +150,6 @@
                     <span class="event-details-section">1st:</span> Rs 4000<br><span>🥈</span>
                     <span class="event-details-section">2nd :</span>Rs 2000<br>
 
-                </div>
-                <div class="card">
-                    <img src="images\druvi4.jfif" />
-                    <h1>Prof. Manisha Fal Dessai </h1>
-                    <h2>Faculty in-charge</h2>
-                    <div class="social-container">
-                        <a href="https://api.whatsapp.com/send/?phone=919637813331">
-                            <div class="whatsapp">
-                                <i class="fa fa-whatsapp" style="color:white"></i>
-                            </div>
-                        </a>
-
-                    </div>
                 </div>
                 <div class="card">
                     <img src="images\druvi4.jfif" />
@@ -192,9 +186,9 @@
     <div class="footer">
 
         <div class="foot-L">
-            <img src="images\dbce_logo.png" alt="dbce" class="dbce-logo">
+            <img src="../Media/Images/dbce_logo.png" alt="dbce" class="dbce-logo">
             <br>
-            <img src="images\logo.png" alt="Inspirus 2021" class="inspirus-logo">
+            <img src="../Media\Logos\main-logo.png" alt="Inspirus 2022" class="inspirus-logo">
             <div class="footer-text-left">
 
                 All team members participating in offline (in-person) events should carry their vaccination certificate (hard copy or soft copy) otherwise they will have to sign a declaration.
@@ -225,7 +219,7 @@
         </div>
 
         <div class="foot-r">
-            <div class="section-header">Sponsored by:
+            <!-- <div class="section-header">Sponsored by:
                 <hr>
             </div>
             <br>
@@ -260,7 +254,7 @@
 
                 <br>
 
-            </div>
+            </div> -->
             <div class="map">
                 <iframe frameborder="2" scrolling="no" src="https://maps.google.com/maps?width=10%25&amp;height=400&amp;hl=en&amp;q=Dbce+(Don%20Bosco%20College%20of%20Engineering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>

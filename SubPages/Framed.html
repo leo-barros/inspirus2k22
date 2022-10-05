@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
-    <link rel="stylesheet" href="particles.css">
-    <link rel="stylesheet" href="blob.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact-card.css">
-    <link rel="stylesheet" href="event2.css">
-    <link rel="stylesheet" href="social-buttons.css">
+    <link rel="stylesheet" href="../Stylesheets/particles.css">
+    <link rel="stylesheet" href="../Stylesheets/blob.css">
+    <link rel="stylesheet" href="../Stylesheets/style.css">
+    <link rel="stylesheet" href="../Stylesheets/contact-card.css">
+    <link rel="stylesheet" href="../Stylesheets/event2.css">
+    <link rel="stylesheet" href="../Stylesheets/social-buttons.css">
 
 
     <title>Framed:Inspirus 2022</title>
@@ -24,29 +25,41 @@
     <div id="P-cont">
         <div id="particles-js"></div>
     </div>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    <script src="../Scripts/Particles/particles.js"></script>
+    <script src="../Scripts/Particles/app.js"></script>
     <!-- nav start-->
 
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo.png" alt="Inspirus 2021" class="logo"></a>
+    <script src="../Scripts/navbar.js"></script>
+    <div class="navbar" id="navB">
+        <a href="../index.html" id="NavBLG">
+
+            <img src="../Media/Logos/main-logo.png" alt="Inspirus 2022" class="logo">
+        </a>
+
         <nav>
             <ul id=menuList>
-                <li>
-                    <a href="index.html"> <b>HOME</b></a>
-                </li>
-                <li>
-                    <a href="team.html"> <b>TEAM</b></a>
-                </li>
-
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../SubPages/team_2022.html">TEAM</a></li>
             </ul>
         </nav>
-        <img src="images/menu.png" alt="..." class="menu-icon" onclick="togglemenu()">
+
+        <span class="material-symbols-outlined" id="colorSwitcher" onclick="ColorScheme()">
+
+        </span>
+
+        <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()">
+            menu
+        </span>
+        <a href="../SubPages/Terminal/Terminal.html"><span class="material-symbols-outlined"
+                style=" font-variation-settings:'FILL' 0,'wght' 400;">
+                terminal
+            </span></a>
+
     </div>
 
     <!-- nav end-->
     <div class="event-title">Framed</div>
-    <div class="helper-container">
+    <!-- <div class="helper-container">
         <div class="helper-title">SPONSORED BY:</div>
         <div class="sponsors">
             <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
@@ -57,7 +70,7 @@
             </div>
         </div>
     </div>
-    <img src="images\undraw_photo_session_clqr.svg" alt="" class="illustration">
+    <img src="images\undraw_photo_session_clqr.svg" alt="" class="illustration"> -->
 
 
     <!-- <div class="helper-title" style="margin-top: 1rem;"><i> Sponsored By </i> <hr> </div> 
@@ -74,8 +87,8 @@
                     <div class="  sub-title">Eligibility Criteria</div>
                     <ul>
                         <li>Students from High School, Higher Secondary, Undergraduate and Diploma from professional non-professional institutions.</li>
-                        <li>Topic: Will be sent at 9:00 am via WhatsAp & E-mail that you have provided on registration form.</li>
-                        <li>Judgment Criteria: Creativity/Originality, direction portrayal of topic, overall effect.</li>
+                        <li>Topic: Will be sent at 9:00 am via WhatsAp & E-mail that you have provided on registration form.
+                        </li>
                         <li>Submission link will be active at 2pm on the Inspirus website under Framed event</li>
                     </ul>
 
@@ -96,12 +109,19 @@
                         <li>All the details of the photo will be checked.</li>
                         <li>Participants have to submit only original images ( Images that are taken by you and not anyone else). In case we confirm any instance of a Participant copying someone else's pictures and submitting them as their own, or otherwise
                             cheating in the competition, will directly be disqualified.</li>
-                        <li>Any Participant found submitting pictures taken from the internet, will directly be disqualified</li>
+                        <li>Any Participant found submitting pictures taken from the internet, will directly be disqualified
+                        </li>
                         <li>Exceeding submission time limit will lead to disqualification.</li>
                         <li>Late registration will not be entertained.</li>
                         <li>Use of drones is not allowed.</li>
                         <li>Violation of the instructions will lead to disqualification</li>
                     </ul>
+                </div>
+                <div class="bottom">
+
+                    <div class="sub-title">Judging Criteria</div>
+                    Creativity/Originality, direction portrayal of topic, overall effect.
+
                 </div>
 
             </div>
@@ -124,16 +144,136 @@
                 </div>
                 <div class="card">
                     <img src="images\nihalpp.jfif" />
-                    <h1>Amey Kerkar</h1>
-                    <h2>Faculty In-charge</h2>
-                    <div class="social-container">
-                        <a href="https://api.whatsapp.com/send/?phone=919405920393">
-                            <div class="whatsapp">
-                                <i class="fa fa-whatsapp" style="color:white"></i>
-                            </div>
-                        </a>
-
-                    </div>
+                    <h1>Event Co-ordinators</h1>
+                    <!-- <h2>Faculty In-charge</h2> -->
+                    <table>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Duval Gomes</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=91999169017">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Sunny Fernandes</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=918329544092">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Isaiah D’costa</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=917767870178">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Rushabh Gauncar</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=917798347605">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Yadnya Phadke</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=917020962342">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Jeslif Fernandes</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=917249815506">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Sahil Hosmani</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=919503241815">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Ayush Mopkar</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=917020487805">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="font-weight: 300;">Aartika Salkar</h2>
+                            </td>
+                            <td>
+                                <div class="social-container">
+                                    <a href="https://api.whatsapp.com/send/?phone=919309183563">
+                                        <div class="whatsapp" style="width: 3em;">
+                                            <i class="fa fa-whatsapp" style="color:white"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <a href="https://forms.gle/djSfkMZhxV12Bdo28">
                     <div class=" register-button">Register</div>
@@ -147,9 +287,9 @@
     <div class="footer">
 
         <div class="foot-L">
-            <img src="images\dbce_logo.png" alt="dbce" class="dbce-logo">
+            <img src="../Media/Images/dbce_logo.png" alt="dbce" class="dbce-logo">
             <br>
-            <img src="images\logo.png" alt="Inspirus 2021" class="inspirus-logo">
+            <img src="../Media\Logos\main-logo.png" alt="Inspirus 2022" class="inspirus-logo">
             <div class="footer-text-left">
 
                 All team members participating in offline (in-person) events should carry their vaccination certificate (hard copy or soft copy) otherwise they will have to sign a declaration.<br> Wearing a mask is strictly compulsory!
@@ -161,11 +301,11 @@
             </div>
             <ul class="ul1">
                 <li><a href="https://www.instagram.com/inspirusdbce/"><i class="fa fa-instagram fa-lg"
-              style="font-size: 0.73em;"></i></a></li>
+                            style="font-size: 0.73em;"></i></a></li>
                 <li><a href="https://m.facebook.com/inspirusdbce/"><i class="fa fa-facebook-square fa-lg"
-              style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
+                            style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
                 <li><a href="https://twitter.com/Inspirus2k21"><i class="fa fa-twitter fa-lg" style="font-size: 0.73em;"
-              aria-hidden="true"></i></a></li>
+                            aria-hidden="true"></i></a></li>
 
 
             </ul>
@@ -180,7 +320,7 @@
         </div>
 
         <div class="foot-r">
-            <div class="section-header">Sponsored by:
+            <!-- <div class="section-header">Sponsored by:
                 <hr>
             </div>
             <br>
@@ -215,7 +355,7 @@
 
                 <br>
 
-            </div>
+            </div> -->
             <div class="map">
                 <iframe frameborder="2" scrolling="no" src="https://maps.google.com/maps?width=10%25&amp;height=400&amp;hl=en&amp;q=Dbce+(Don%20Bosco%20College%20of%20Engineering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </div>
