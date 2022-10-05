@@ -10,6 +10,7 @@ body{
     width: 100%;
     padding: 10px 10px 10px 10px;
     position: relative;
+    background-color: black;
 }
 .link{
     color: white;
@@ -22,10 +23,6 @@ body{
 }
 /*team container*/
 .team{
-    margin-top: 3rem;
-    margin-bottom: 10rem;
-    width: 100%;
-    height: auto;
 
     padding: 0px;
     text-align: center;
@@ -35,6 +32,16 @@ body{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+}
+.card
+{
+ 
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.373);
+    border-radius: .2rem;
+    padding-top: 20px;
+
 }
 .member{
     height: auto;
@@ -62,10 +69,12 @@ transition: 400ms;
     border-radius: inherit;
 }
 .name{
+
   
     font-family: "Poppins", sans-serif;
 
     font-size: 1.6rem;
+
 }
 .title{
     color: rgb(255, 255, 255);
