@@ -1,4 +1,5 @@
 body{
+    font-size: 62.5%; /*  1rem = 10px  */
     background-color: black;
     margin: 0px;
     padding: 0px;
@@ -13,7 +14,7 @@ body{
 .link{
     color: white;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
 }
 .link:hover{
@@ -56,7 +57,7 @@ div.card
     margin-right: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.373);
-    border-radius: 50px;
+    border-radius: .2rem;
     padding-top: 20px;
 }
 .dp{
@@ -66,14 +67,14 @@ div.card
 }
 .name{
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 8px 0px 8px 0px;
     font-size: 3vh;
 }
 .title{
     color: rgb(255, 255, 255);
     margin-left: 60px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 25px;
     z-index: 0;
     padding: 20px 0px 0px 0px;

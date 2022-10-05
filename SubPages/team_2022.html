@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" href="../Stylesheets/particles.css"> 
         <link rel="stylesheet" href="../Stylesheets/team.css">
+        <link rel="stylesheet" href="../Stylesheets/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,9 +21,27 @@
 <!--DONT Put Anything In Here-->
 <div id="P-cont"><div id="particles-js"></div></div>
 <!--DONT Put Anything In Here-->
-        <div class="navbar">
-            <a href="/index.html" class="link">HOME</a>
-        </div>
+<div class="navbar">
+    <a href="index.html">
+      <img src="../Media/Images/logo.png" alt="Inspirus 2021" class="logo">
+    </a>
+  
+    <nav> 
+         <ul id=menuList>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="./SubPages/team_2022.html">TEAM</a></li>
+         </ul>
+    </nav>
+  
+    <span class="material-symbols-outlined" onclick="ColorScheme" >
+      dark_mode
+      </span>
+   <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()" >
+    menu
+    </span>
+  
+  
+  </div>
         <!--TEAM MODULE-->
         <h1 class="title">DESIGN TEAM</h1>
         <div class="team">
@@ -176,6 +195,7 @@
             <!--MEMBER MODULE END-->
         </div>
         <!--TEAM MODULE END-->
+        <script src="../Scripts/Nav.js"></script> 
         <script src="../Scripts/Particles/particles.js"></script> 
         <script src="../Scripts/Particles/app.js"></script>
     </body>
