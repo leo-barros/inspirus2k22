@@ -9,6 +9,7 @@ body{
     width: 100%;
     padding: 10px 10px 10px 10px;
     position: relative;
+    background-color: black;
 }
 .link{
     color: white;
@@ -21,7 +22,7 @@ body{
 }
 /*team container*/
 .team{
-    width: 100%;
+    width: 100vw;
     height: auto;
     margin: 0px;
     padding: 0px;
@@ -54,10 +55,10 @@ div.card
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.373);
-    border-radius: 50px;
-    padding-top: 20px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.373);
+    border-radius: 30px;
+    padding: 20px;
 }
 .dp{
     height: 12vw;
@@ -65,9 +66,10 @@ div.card
     border-radius: 100px;
 }
 .name{
-    color: white;
+    color: black;
     font-family: 'Montserrat', sans-serif;
-    padding: 8px 0px 8px 0px;
+    padding: 0px 0px 12px 0px;
+    font-size: 50px;
     font-size: 3vh;
 }
 .title{
