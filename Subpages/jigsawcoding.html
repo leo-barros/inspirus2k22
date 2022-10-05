@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
-
-    <link rel="stylesheet" href="particles.css">
-    <link rel="stylesheet" href="blob.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact-card.css">
-    <link rel="stylesheet" href="event2.css">
-    <link rel="stylesheet" href="social-buttons.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
+  <link rel="stylesheet" href="../Stylesheets/particles.css">
+  <link rel="stylesheet" href="../Stylesheets/blob.css">
+  <link rel="stylesheet" href="../Stylesheets/style.css">
+  <link rel="stylesheet" href="../Stylesheets/contact-card.css">
+  <link rel="stylesheet" href="../Stylesheets/social-buttons.css">
+  <link rel="stylesheet" href="../Stylesheets/event2.css">
     
     
     <title>Jigsaw coding:Inspirus 2022</title>
@@ -26,21 +24,36 @@
     <script src="app.js"></script>
 <!-- nav start--> 
 
-<div class="navbar">
-    <a href="index.html"><img src="images/logo.png" alt="Inspirus 2021" class="logo"></a>
-    <nav> 
-         <ul id=menuList>
-              <li><a href="index.html"> <b>HOME</b></a></li>
-              <li><a href="team.html"> <b>TEAM</b></a></li>
-              
-         </ul>
-    </nav>
-    <img src="images/menu.png" alt="..." class="menu-icon" onclick="togglemenu()">  
+<script src="../Scripts/navbar.js"></script>
+<div class="navbar" id="navB">
+  <a href="../index.html" id="NavBLG">
+  
+    <img src="../Media/Logos/main-logo.png" alt="Inspirus 2022" class="logo">
+  </a>
+
+  <nav> 
+       <ul id=menuList>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../SubPages/team_2022.html">TEAM</a></li>
+       </ul>
+  </nav>
+
+  <span class="material-symbols-outlined" id="colorSwitcher" onclick="ColorScheme()" >
+    
+    </span>
+    
+ <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()" >
+  menu
+  </span>
+<a href="../SubPages/Terminal/Terminal.html"><span class="material-symbols-outlined" style=" font-variation-settings:'FILL' 0,'wght' 400;">
+    terminal
+    </span></a>
+  
 </div>
 
 <!-- nav end-->
 <div class="  event-title">Jigsaw coding</div>
-<div class="helper-container">
+<!-- <div class="helper-container">
   <div class="helper-title">POWERED BY:</div>
   <div class="sponsors">
     <div class="helper-logo"  data-aos="zoom-out" data-aos-duration="2000"><a href="https://www.creativecapsule.com/"><img style="width:80%" src="images\helpers\CC_logo.jpg" alt="OneShield Software"></a></div>
@@ -52,7 +65,7 @@
     <div class="helper-logo"  data-aos="zoom-out" data-aos-duration="2000"><a href="https://oneshield.com/about/"><img src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
     <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000"><a href="https://kilowott.com/"><img src="images\helpers\kilowott.png" alt="Kilowott"></a></div>
   </div>
- </div>
+ </div> -->
 <img src="images\undraw_code_inspection_bdl7.svg" alt="" class="illustration">
 <!-- <div class="helper-title" style="margin-top: -1rem;"> <i> Sponsored By </i> <hr> </div> 
 <hr>    
@@ -77,7 +90,7 @@
                 <div class="  sub-title" >Eligibility Criteria</div>
     <ul>
     <li>Students from High School, Higher Secondary, Undergraduate and Diploma from professional non-professional institutions.</li>
-    <li>Judging Criteria: logic,speed,Accuracy,Implementation </li>
+    
     </ul>
             </div>
             <div class="bottom">
@@ -98,7 +111,11 @@
                   <li>Incase of any query feel free to approach the coordinators</li>
                   </ul>
             </div>
-    
+            <div class="bottom">
+
+              <div class="sub-title">Judging Criteria</div>
+              <li>Judging Criteria: logic,speed,Accuracy,Implementation </li>    
+          </div>
      
 </div>
 <div class="right" >

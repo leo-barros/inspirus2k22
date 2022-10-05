@@ -23,22 +23,37 @@
     <script src="../Scripts/Particles/app.js"></script>
 <!-- nav start--> 
 
-<div class="navbar">
-    <a href="index.html"><img src="images/logo.png" alt="Inspirus 2021" class="logo"></a>
-    <nav> 
-         <ul id=menuList>
-              <li><a href="index.html"> <b>HOME</b></a></li>
-              <li><a href="team.html"> <b>TEAM</b></a></li>
-              
-         </ul>
-    </nav>
-    <img src="images/menu.png" alt="..." class="menu-icon" onclick="togglemenu()">  
+<script src="../Scripts/navbar.js"></script>
+<div class="navbar" id="navB">
+  <a href="../index.html" id="NavBLG">
+  
+    <img src="../Media/Logos/main-logo.png" alt="Inspirus 2022" class="logo">
+  </a>
+
+  <nav> 
+       <ul id=menuList>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../SubPages/team_2022.html">TEAM</a></li>
+       </ul>
+  </nav>
+
+  <span class="material-symbols-outlined" id="colorSwitcher" onclick="ColorScheme()" >
+    
+    </span>
+    
+ <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()" >
+  menu
+  </span>
+<a href="../SubPages/Terminal/Terminal.html"><span class="material-symbols-outlined" style=" font-variation-settings:'FILL' 0,'wght' 400;">
+    terminal
+    </span></a>
+  
 </div>
 
 <!-- nav end-->
 <div class="  event-title">Inspirathon</div>
 <div class="helper-container">
- <div class="helper-title">POWERED BY:</div>
+ <!-- <div class="helper-title">POWERED BY:</div>
  <div class="sponsors">
    <div class="helper-logo"  data-aos="zoom-out" data-aos-duration="2000"><a href="https://oneshield.com/about/"><img src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
    <div class="helper-logo"  data-aos="zoom-out" data-aos-duration="2000"><a href="https://www.fiire.org.in/"><img src="images\helpers\FiiRE_logo.png" alt="FIIRE"></a></div>
@@ -51,7 +66,7 @@
     <div class="helper-logo"  data-aos="zoom-out" data-aos-duration="2000"><a href="https://oneshield.com/about/"><img src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
     <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000"><a href="https://kilowott.com/"><img src="images\helpers\kilowott.png" alt="Kilowott"></a></div>
   </div>
- </div>
+ </div> -->
 <img src="images\undraw_Co-working_re_w93t.svg" alt="" class="illustration" >
 <!-- <div class="helper-title"> <i> Event Powered By </i> <hr> </div>
 <div class="sponsors">
@@ -65,11 +80,7 @@
             <div class="  sub-title" >Eligibility Criteria</div>
             <ul>
                 <li>Students from Undergraduate, Diploma and Higher Secondary Schools from professional non-professional institutions.</li>
-              
-      
-               <br>
-               <h3 style="margin: auto;"> <u> Judging Criteria: </u> </h3>
-                <li>Complexity, Solution to problem, Execution, Optimisation, Presentation.</li>
+    
             </ul>
         </div>
 
@@ -104,6 +115,12 @@
                 </ul>
         </div>
 
+        <div class="bottom">
+
+          <div class="sub-title">Judging Criteria</div>
+          <li>Complexity, Solution to problem, Execution, Optimisation, Presentation.</li>
+
+      </div>
    
     </div>
 <br>
