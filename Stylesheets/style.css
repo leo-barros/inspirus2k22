@@ -3,12 +3,20 @@ html {
   font-size: 62.5%; /*  1rem = 10px  */
   scroll-behavior: smooth;
 }
-
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+   color: var(--text);
+}
 :root {
   --bg:#ffffff;
-  --text:#111111;
+  --text:#ffffff;
   --black:#000000;
   --radius:.2rem;
+  --cardColor:rgba(21, 21, 21, 0.402);
 
 }
 
@@ -34,9 +42,7 @@ html {
 }
 
 .menu-icon {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
+ cursor: pointer;
   display: none;
 
 }
@@ -51,7 +57,7 @@ nav ul li {
   position: relative;
  
   display: inline-block;
-  padding: 1rem;
+
  
 }
 
@@ -181,7 +187,7 @@ body {
   font-size: 2rem;
   padding: 2rem;
   font-weight: 300;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: var(--cardColor);
   padding: 3rem;
   border-radius: 1rem;
   backdrop-filter: blur(0.45rem);
@@ -201,7 +207,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: -20rem;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: var(--cardColor);
   padding: 2rem;
   padding-left: 30rem;
   border-radius: 1rem;
@@ -401,10 +407,7 @@ body {
   padding: 0.2rem;
 }
 
-#particles-js {
-  width: 100%;
-  height: 100%;
-}
+
 
 /*Footer Start*/
 .footer {
@@ -514,9 +517,8 @@ body {
   }
   .menu-icon {
     color: #ffffff;
-    width: 1rem;
-    height: 1rem;
-    background: #000000;
+    max-width: 5vw;
+ 
   }
   nav ul {
     width: 100%;
@@ -529,11 +531,13 @@ body {
     z-index: 2;
   }
   nav ul li {
+    padding: 1rem;
     display: block;
     margin-top: 1rem;
     text-align: center;
-    margin-bottom: 0.5rem;
+   
   }
+ 
   nav ul li a {
     color: white;
     font-size: 2rem;
@@ -724,7 +728,7 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.03);
+  background-color: var(--cardColor);
   backdrop-filter: blur(0.45rem);
   -webkit-backdrop-filter: blur(0.45rem);
 }
