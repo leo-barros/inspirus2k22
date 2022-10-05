@@ -470,6 +470,7 @@ color: #000000;
 }
 
 .footer-text-left {
+  color: white;
   font-size: 1.6rem;
   padding: 0.8rem;
 }
@@ -478,7 +479,7 @@ color: #000000;
   align-self: baseline;
   justify-self: space-around;
   width: 60rem;
-  height: 10rem;
+  height: 20rem;
   border-radius: 2rem;
 }
 
