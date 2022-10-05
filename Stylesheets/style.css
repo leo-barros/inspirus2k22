@@ -25,14 +25,19 @@ html {
   --textCard:black;
   --black:#000000;
   --radius:.2rem;
-  --cardColor:rgba(255, 255, 255, 0.2);
+  --cardColor:rgba(255, 255, 255, 0.26);
   --MembercardColor:rgb(255, 255, 255);
   --thickness:.2rem;
-  --HRColor:rgba(0, 0, 0, 0.26);
+  --HRColor:rgb(0, 0, 0);
   --accent:rgb(252, 0, 231);
   --accentHover:rgb(255, 255, 255);
   --accent2:rgb(0, 0, 0);
+  
 
+}
+.highlightedText{
+font-weight: 450;
+  color: rgb(0, 72, 255);
 }
 .SocialButton{
   color: var(--text);
@@ -57,6 +62,8 @@ html {
 
 .logo {
   width: 20rem;
+  object-fit:cover;
+  height: 5rem;
   padding: 1rem;
   cursor: pointer;
 
