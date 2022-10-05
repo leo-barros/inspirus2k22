@@ -47,8 +47,8 @@ canvas{
 
 
 #particles-js{
- filter: blur(80px);
-
+ filter: blur(50px);
+opacity: 70%;
 
   width: 90%;
   height: 90%;
@@ -62,7 +62,7 @@ body{
 
 #particles-js{
 
-  //background: rgb(0, 0, 31);
-  background: rgb(0, 0, 0);
+  background: rgb(203, 203, 203);
+  //background: rgb(0, 0, 0);
 
 }

@@ -97,7 +97,8 @@ canvas {
 }
 
 #particles-js {
-  filter: blur(80px);
+  filter: blur(50px);
+  opacity: 70%;
   width: 90%;
   height: 90%;
   transform: scale(1.5);
@@ -108,5 +109,5 @@ body {
 }
 
 #particles-js {
-  background: rgb(0, 0, 0);
-}/*# sourceMappingURL=particles.css.map */
+  background: rgb(203, 203, 203);
+}
