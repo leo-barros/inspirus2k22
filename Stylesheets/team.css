@@ -1,6 +1,5 @@
 body{
     font-size: 62.5%; /*  1rem = 10px  */
-    background-color: black;
     margin: 0px;
     padding: 0px;
     z-index: 999;
@@ -17,9 +16,6 @@ body{
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 800;
-}
-.link:hover{
-    color: black;
 }
 /*team container*/
 .team{
@@ -43,7 +39,7 @@ margin-bottom: 7rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-transition: 400ms;
+    transition: 400ms;
 }
 .card{
     border-radius: inherit;
@@ -79,11 +75,13 @@ transition: 400ms;
 
 .section-header{
 font-size: 3rem !important;
-font-weight: 300 !important;
+font-weight: 600 !important;
+color: white;
+text-shadow: 2px 3px white;
 }
 
 .section-header hr{
-    border: .1px solid black !important;
+    border: .2px solid black !important;
 }
 
 .SocialButton{
@@ -97,7 +95,7 @@ font-weight: 300 !important;
 }
 
 .SocialButton:hover{
-    background: rgb(0, 123, 255);
+    background: rgb(70, 182, 0);
     color: white;
     font-weight: 400;
 }
