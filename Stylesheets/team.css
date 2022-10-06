@@ -54,8 +54,6 @@ transition: 400ms;
 }
 
 .dp{
-  
-    
     width: 100%;
     border-radius: 2rem 2rem 0rem 0rem;
 }
@@ -100,4 +98,6 @@ font-weight: 300 !important;
 
 .SocialButton:hover{
     background: rgb(0, 123, 255);
+    color: white;
+    font-weight: 400;
 }
