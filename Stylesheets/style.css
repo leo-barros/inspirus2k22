@@ -19,7 +19,7 @@ html {
 }
 :root {
   --NavColor:rgb(0, 0, 0);
-  --NavText:white;
+  --NavText:rgb(255, 255, 255);
   --bg:#ffffff;
   --text:#000000;
   --textCard:black;
@@ -35,6 +35,13 @@ html {
   
 
 }
+
+
+  
+
+#particles-js {
+  background: var(--bg);
+}
 .highlightedText{
 font-weight: 450;
   color: rgb(0, 72, 255);
@@ -48,6 +55,7 @@ font-weight: 450;
 }
 * ::-webkit-scrollbar {
   display: none
+
 }
 
 /* nav style start*/
@@ -61,8 +69,8 @@ font-weight: 450;
 }
 
 .logo {
-  width: 20rem;
-  object-fit:cover;
+
+
   height: 5rem;
   padding: 1rem;
   cursor: pointer;
@@ -552,7 +560,7 @@ color: #000000;
     font-size: 4.5rem;
   }
   .logo {
-    width: 11rem;
+    
   }
   .menu-icon {
 

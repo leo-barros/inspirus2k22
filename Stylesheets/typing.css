@@ -6,7 +6,7 @@
     width: 0;
     overflow: hidden;
     color: white;
-    background:linear-gradient(white,black);
+    background:linear-gradient(rgb(0, 0, 0),black);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
