@@ -137,7 +137,7 @@
 .register-button {
   position: relative;
   margin-top: 2rem;
-  background-color: rgb(92, 92, 255);
+  background-color: rgba(0, 0, 0, 0.568);
   text-align: center;
   color: white;
   border-radius: 2rem;
@@ -153,7 +153,7 @@
     font-size: 6rem;
   }
   .sub-title{
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .main {
     margin-bottom: 2rem;
@@ -180,7 +180,7 @@
   .event-details,
   .card {
     margin: auto;
-    max-width: 95%;
+    max-width: 92%;
     height: auto;
   }
   .rules {
@@ -191,7 +191,8 @@
     margin: 0 0 0 0;
     margin: auto;
     padding: 1rem;
-    width: 90%;
+    width: 88%;
+   
   }
   .card {
     width: 100%;
