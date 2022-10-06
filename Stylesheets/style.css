@@ -836,8 +836,8 @@ color: #000000;
 }
 
 .li.complete .status:before {
-  background: #bc4e9c; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0040ff; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right top,rgb(0, 34, 255),rgb(50, 135, 225)); /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   /* background-color:#9F27A8; */
   /* border: .005rem white solid; */
   transition: all 200ms ease-in;

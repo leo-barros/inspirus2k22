@@ -1725,17 +1725,17 @@ JJJJJJJJJJJJJJJ????????????JGBINSPIRUS2022#BYY5YJJJY5GB##BBBJ7777777777777777777
 const timeToLoadForm=2000;
 
 //links
-const InspirathonLink='http://rhysjosmin.tk'
-const RSLink='http://rhysjosmin.tk'
-const CodeplayLink='http://rhysjosmin.tk'
-const ExQuiziteLink='http://rhysjosmin.tk'
-const CWLink='http://rhysjosmin.tk'
-const JCLink='http://rhysjosmin.tk'
-const MindGamesLink='http://rhysjosmin.tk'
-const RAMLink='http://rhysjosmin.tk'
-const FramedLink='http://rhysjosmin.tk'
-const IncarnateLink='http://rhysjosmin.tk'
-const VDJLink='http://rhysjosmin.tk'
+const InspirathonLink='https://forms.gle/EPK7cRsEbhNVQidKA'
+const RSLink='https://forms.gle/KUBdXgRG4TFXJpdW8'
+const CodeplayLink='https://docs.google.com/forms/d/e/1FAIpQLSfmEPmdZK8NmRfTftyrNRnWmVOtnG-nLrdU0tNr7DfF_LF6tg/viewform?usp=sf_link'
+const ExQuiziteLink='https://forms.gle/c21ztG4WsuqG26o76'
+const CWLink='https://forms.gle/cKm8hdevvmtMJAK5A'
+const JCLink='https://docs.google.com/forms/d/e/1FAIpQLScX-iDz9c_jV1FO0_T4nwAeP-XtFbYOcN6BjJX3zs5WMxD38A/viewform?usp=sf_link'
+const MindGamesLink='https://forms.gle/9mVLeQ4Bp97RLppS6'
+const RAMLink='https://forms.gle/en3sJBWJAtFdzGBy9'
+const FramedLink='https://forms.gle/xssGcYhVAwynWCQHA'
+const IncarnateLink='https://forms.gle/MFSDD4AfkZMPKJxQ6'
+const VDJLink='https://forms.gle/BsdKpKfF8RHhBXAT8'
 const FunzoneLink='http://rhysjosmin.tk'
 
 
