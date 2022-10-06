@@ -34,6 +34,26 @@ background-size:200% 200% ;
 
 }
 
+.blob_purple{
+  
+  background: linear-gradient(-45deg, #2329db,#40038a);
+background-size:200% 200% ;
+  border-radius: 50rem;
+  animation: blob 3s linear alternate infinite, gradient 5s ease infinite;
+
+}
+
+.blob_blue{
+  
+  background: linear-gradient(-45deg, #23c9db,#2124ed);
+background-size:200% 200% ;
+  border-radius: 50rem;
+  animation: blob 3s linear alternate infinite, gradient 5s ease infinite;
+
+}
+
+
+
 .blob_red{
   
   background: linear-gradient(-85deg, #db8523,#2600ff);
