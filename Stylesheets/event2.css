@@ -137,7 +137,7 @@
 .register-button {
   position: relative;
   margin-top: 2rem;
-  background-color: rgba(0, 0, 0, 0.568);
+  background-color: rgb(0, 0, 0);
   text-align: center;
   color: white;
   border-radius: 2rem;
