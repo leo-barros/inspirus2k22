@@ -34,7 +34,7 @@ margin-bottom: 7rem;
 .member{
 
     width:20rem;
-    min-height: 32rem;
+    height: 32rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
@@ -43,6 +43,8 @@ margin-bottom: 7rem;
     box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.081);
  
 }
+
+
 .card{
 
     border-radius: inherit;
@@ -50,7 +52,10 @@ margin-bottom: 7rem;
 }
 .member:hover{
     transform: translateY(-1rem);
+    
+
 }
+
 
 .dp{
     width: 100%;
