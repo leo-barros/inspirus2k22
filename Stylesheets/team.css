@@ -32,7 +32,7 @@ margin-bottom: 7rem;
 }
 
 .member{
- 
+
     width:20rem;
     min-height: 32rem;
     border-radius: 2rem;
@@ -40,8 +40,11 @@ margin-bottom: 7rem;
     justify-content: center;
     align-items: flex-start;
     transition: 400ms;
+    box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.081);
+ 
 }
 .card{
+
     border-radius: inherit;
 
 }
@@ -76,8 +79,8 @@ margin-bottom: 7rem;
 .section-header{
 font-size: 3rem !important;
 font-weight: 600 !important;
-color: white;
-text-shadow: 2px 3px white;
+
+
 }
 
 .section-header hr{
@@ -85,6 +88,7 @@ text-shadow: 2px 3px white;
 }
 
 .SocialButton{
+    
     text-decoration: none;
     border-radius: 1rem;
     font-size: 1.2rem;
@@ -94,8 +98,14 @@ text-shadow: 2px 3px white;
     
 }
 
-.SocialButton:hover{
+.whatsApp:hover{
     background: rgb(70, 182, 0);
+    color: white;
+    font-weight: 400;
+}
+
+.LinkedIn:hover{
+    background: #0077b5;
     color: white;
     font-weight: 400;
 }
