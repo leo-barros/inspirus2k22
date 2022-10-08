@@ -10,9 +10,9 @@ html {
   'wght' 400,
   'GRAD' 0,
   'opsz' 48;
-   color: var(--NavText);
-   margin-right: 2rem;
-   cursor: pointer;
+  color: var(--NavText);
+  margin-right: 2rem;
+  cursor: pointer;
 }
 .material-symbols-outlined:hover{
   color: var(--accent) ;
@@ -597,7 +597,6 @@ color: #000000;
   .menu-icon {
     user-select: none;
     display: block;
-    
   }
   #menuList {
     background: var(--NavColor);
