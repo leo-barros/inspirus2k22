@@ -49,14 +49,17 @@
     border: 1px solid rgb(0, 238, 255);
     width: 95%;
   }
-  .card img {
-    width: 60%;
-    height: auto;
-    border: solid 8px #eaeaea;
-    background: white;
+  .card img{
+    width:20rem;
+    height:20rem;
+    object-fit: cover;
+    border: solid 8px #ffffff;
+
     border-radius: 50%;
     margin: 0 auto;
+  
   }
+  
   .card h1 {
       font-size: 2rem;
     margin: 0.6rem 0 0 0;
