@@ -1,205 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="icon" type="image/x-icon" href="../Media/Favicon/f.ico">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="../Media/Favicon/f.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/dbb72ac4f9.js"></script>
-    <link rel="stylesheet" href="particles.css">
-    <link rel="stylesheet" href="blob.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact-card.css">
-    <link rel="stylesheet" href="event2.css">
-    <link rel="stylesheet" href="social-buttons.css">
-    
-    
-    <title>MindSpark:Inspirus 2021</title>
+    <link rel="stylesheet" href="../Stylesheets/particles.css">
+    <link rel="stylesheet" href="../Stylesheets/blob.css">
+    <link rel="stylesheet" href="../Stylesheets/style.css">
+    <link rel="stylesheet" href="../Stylesheets/contact-card.css">
+    <link rel="stylesheet" href="../Stylesheets/event2.css">
+    <link rel="stylesheet" href="../Stylesheets/social-buttons.css">
+
+
+    <title>Leisure Lounge:Inspirus 2022</title>
 </head>
+
 <body>
 
-  <div id="P-cont"><div id="particles-js"></div></div>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-<!-- nav start--> 
+    <div id="P-cont">
+        <div id="particles-js"></div>
+    </div>
+    <script src="../Scripts/Particles/particles.js"></script>
+    <script src="../Scripts/Particles/app.js"></script>
+    <!-- nav start-->
 
-<div class="navbar">
-    <a href="index.html"><img src="images/logo.png" alt="Inspirus 2021" class="logo"></a>
-    <nav> 
-         <ul id=menuList>
-              <li><a href="index.html"> <b>HOME</b></a></li>
-              <li><a href="team.html"> <b>TEAM</b></a></li>
-              
-         </ul>
-    </nav>
-    <img src="images/menu.png" alt="..." class="menu-icon" onclick="togglemenu()">  
-</div>
+    <script src="../Scripts/navbar.js"></script>
+    <div class="navbar" id="navB">
+        <a href="../index.html" id="NavBLG">
 
-<!-- nav end-->
-<div class=" event-title">MindSpark</div>
-<div class="helper-container">
-  <div class="helper-title">POWERED BY:</div>
-  <div class="sponsors">
-    <div class="helper-logo"  data-aos="zoom-out" data-aos-duration="2000"><a href="https://www.siliconcortech.com/"> <img src="images\helpers\silicon.jpeg" alt="Silicon Cortech"></a></div>
+            <img src="../Media/Logos/main-logo.png" alt="Inspirus 2022" class="logo">
+        </a>
+
+        <nav>
+            <ul id=menuList>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../SubPages/team_2022.html">TEAM</a></li>
+            </ul>
+        </nav>
+
+        <span class="material-symbols-outlined" id="colorSwitcher" onclick="ColorScheme()">
+
+        </span>
+
+        <span class="material-symbols-outlined menu-icon" id="MENUBUTTON" onclick="togglemenu()">
+            menu
+        </span>
+        <a href="../SubPages/Terminal/Terminal.html"><span class="material-symbols-outlined"
+                style=" font-variation-settings:'FILL' 0,'wght' 400;">
+                terminal
+            </span></a>
+
+    </div>
+
+    <!-- nav end-->
+
+
+    <div class=" event-title">Leisure Lounge</div>
+    <!-- <div class="helper-title">POWERED BY:</div>
+    <div class="sponsors">
+        <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
+            <a href="https://www.instagram.com/green_alchemist_nursery"> <img src="images\helpers\green.png" alt=""></a>
+        </div>
+    </div>
+    <div class="helper-container">
+        <div class="helper-title">SPONSORED BY:</div>
+        <div class="sponsors">
+            <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
+                <a href="https://oneshield.com/about/"><img src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a>
+            </div>
+            <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000">
+                <a href="https://kilowott.com/"><img src="images\helpers\kilowott.png" alt="Kilowott"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <img src="images\undraw_pair_programming_njlp.svg" alt="" class="illustration"> -->
+
+    <!-- <div class="helper-title" style="margin-top: -1rem;"> <i> Sponsored By </i> <hr> </div> 
+<hr>    
   </div>
- </div>
- <div class="helper-container">
-  <div class="helper-title">SPONSORED BY:</div>
-  <div class="sponsors">
-    <div class="helper-logo"  data-aos="zoom-out" data-aos-duration="2000"><a href="https://oneshield.com/about/"><img src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
-    <div class="helper-logo" data-aos="zoom-out" data-aos-duration="2000"><a href="https://kilowott.com/"><img src="images\helpers\kilowott.png" alt="Kilowott"></a></div>
-  </div>
- </div>
-<img src="images\undraw_Questions_re_1fy7.svg" alt="" class="illustration">
 
-<!-- <div class="helper-title" style="margin-top: 1rem;"><i> Sponsored By </i> <hr> </div> 
-<hr> 
 <div class="sponsorsa" style="width:60%">
     <div class="sponsora-logo"><a href="https://oneshield.com/about/"><img style="width:80%" src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
     <div class="sponsora-logo"><a href="https://kilowott.com/"><img style="width:80%; height:89%;  margin-top:-.7rem;" src="images\helpers\kilowott.png" alt="Kilowott"></a></div>
-  </div> -->
+  </div>
 
-
-<!-- <div class="helper-title" style="margin-bottom: -.4rem;"> <i> Event Powered By </i> <hr> </div>
+    <div class="helper-title" style="margin-left: -.4rem;"> <i> Event Powered By </i> <hr> </div>
 <div class="sponsors" style="width: 90%;">
-    <div class="silicons" style="width: 50%;"><a href="https://www.siliconcortech.com/"> <img src="images\helpers\silicon.jpeg" alt="Silicon Cortech"></a></div>
+    <div class="siliconx" style="width: 40%; height:40%"><a href="https://www.instagram.com/green_alchemist_nursery"> <img src="images\helpers\green.png" alt=""></a></div>
 </div> -->
 
 
-<hr>    
-  </div>
-<div class="main">
-    <div class="main-para">
-        <div class="rules">
-            <div class="top">
-                <div class=" sub-title" >Eligibility Criteria</div>
-    <ul>
-        <li>Students from High School, Higher Secondary, Undergraduate and Diploma from professional non-professional institutions.</li>
-    </ul>
-            </div>
-            <div class="bottom">
-                <div class=" sub-title" >Rules</div>
-                <ul>
-                <li>Replacement of any participant of a team is not allowed after registration.</li>
-                <li>The theme of the quiz will be <b>Tech, Science and General Knowledge</b>.</li>
-                <li>In case there is an entry of more than 5 teams, there will be a preliminary round wherein 5 teams will be selected by elimination based on the points.</li>
-                <li>These 5 teams will advance to the main round where the final 2 winning teams will be declared. </li>
-                <li>Rules of each round will be announced prior to it. </li>
-                <li>The decision of the quiz masters will be final.</li>
-                </ul>
-            </div>
-    
-       
-</div>
-<div class="right">
-    <div class="event-details">
-        <div class="event-details-header ">Event Details</div>
-        <span class="event-details-section">AKA:</span> Quiz<br>
-        <span class="event-details-section">📅 Date :</span>29th October<br>
-        <span class="event-details-section">🕒Time :</span>1pm - 5pm<br>
-        <span class="event-details-section">📍 Venue : </span>seminar hall-2, first floor<br>
-        <span class="event-details-section">Team Members :</span> 2 per team <br>
-    </div>
-    <div class="event-details prizes">
-        <div class="event-details-header ">Prizes</div>
-        <span>🥇</span>
-        <span class="event-details-section">1st:</span> Rs 2000<br><span>🥈</span>
-        <span class="event-details-section">2nd :</span>Rs 1500<br>
-        
-    </div>
-    <div class="card">
-    <img src="images\Prachi3.jfif"/>
-    <h1>Prachi Parab</h1>
-    <h2>Event Co-ordinator</h2>
-    <div class="social-container">
-        <a href="https://api.whatsapp.com/send/?phone=919923509272"><div class="whatsapp">
-<i class="fa fa-whatsapp" style="color:white"></i></div></a>
-      
-    </div>
-  </div>
-    <a href="https://forms.gle/6CNCqYbo6HmmmMy17"><div class="register-button">Register</div></a> 
-</div>
-</div>
-</div>
-<div class="footer">
-  
-    <div class="foot-L">
-      <img src="images\dbce_logo.png" alt="dbce" class="dbce-logo">
-      <br>
-      <img src="images\logo.png" alt="Inspirus 2021" class="inspirus-logo">
-      <div class="footer-text-left">
+    <div class="main">
+        <div class="main-para">
+            <div class="rules">
+                <div class="top">
+                    <div class="sub-title">Eligibility Criteria</div>
+                    <ul>
+                        <li>Open to all
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom">
 
-        All team members participating in offline (in-person) events 
-        should carry their vaccination certificate (hard copy or soft copy) otherwise they will have to sign a declaration.<br> Wearing a mask is strictly compulsory!<br><br>
-        <span style="font-weight: 600;">Instagram:</span> @inspirusdbce<br>
-        <span style="font-weight: 600;">Facebook:</span> @Inspirus<br>
-        <span style="font-weight: 600;">twitter:</span> @inspirus_dbce<br>
+                    <div class="sub-title">Rules</div>
+                    <ul>
+                        <li>Registration will be exclusively done offline</li>
+                        <li>No limit on the number of participants</li>
+                        <li>Coupon-based system</li>
+                        <li>Each coupon costs ₹50 and allows you to play each game on offer, once
+                        </li>
+                        <li>Exchange of coupons won't be permitted</li>
+                        <li>In case of any queries, reach out to the event coordinators in the auditorium</li>
+                    </ul><br>
+                    <b>Games To Play:</b><br>
+                    <ul>
+                        <li>Race to win it: relay (multiplayer - max 4)</li>
+                        <li>Rush hour: relay (multiplayer - max 3)</li>
+                        <li>Ping tac toe (multiplayer - max 2)</li>
+                        <li>Brain teaser (single player)</li>
+                        <li>Spin-O-Wheel (single-player)</li>
+                    </ul>
+                </div>
 
-      </div>
-      <ul class="ul1">
-  <li><a href="https://www.instagram.com/inspirusdbce/"><i class="fa fa-instagram fa-lg"  style="font-size: 0.73em;"></i></a></li>
-  <li><a href="https://m.facebook.com/inspirusdbce/"><i class="fa fa-facebook-square fa-lg" style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
-  <li><a href="https://twitter.com/inspirus_dbce"><i class="fa fa-twitter fa-lg" style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
-  
-  
-</ul>
-      <!-- <div class="contact"> 
+
+            </div>
+            <div class="right">
+                <div class="event-details">
+                    <div class="event-details-header ">Event Details</div>
+                    <span class="event-details-section">AKA:</span> “Fun Zone”<br>
+                    <span class="event-details-section">📅 Date :</span>3rd & 4th November 2022<br>
+                    <span class="event-details-section">🕒Time :</span>12 pm to 5 pm, 3rd November<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9.30 am to 1.30 pm, 4th November<br>
+                    <span class="event-details-section">📍 Venue : </span>Auditorium<br>
+                    <br>
+                </div>
+                <div class="event-details prizes">
+                    <div class="event-details-header ">Prizes</div>
+                    <span>🥇</span>
+                    <span class="event-details-section">Whoever wins in the individual games gets a prize</span>
+
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/attachments/1026865791557181550/1027546607325036565/Gauravi_Kamat.png" />
+                    <h1>Gauravi Kamat</h1>
+                    <h2>Event Co-ordinator</h2>
+                    <div class="social-container">
+                        <a href="https://api.whatsapp.com/send/?phone=917066408809">
+                            <div class="whatsapp">
+                                <i class="fa fa-whatsapp" style="color:white"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.discordapp.com/attachments/1026865791557181550/1027980406911414352/unknown.png" />
+                    <h1>Jayden Ferrao</h1>
+                    <h2>Event Co-Leader</h2>
+                    <div class="social-container">
+                        <a href="https://api.whatsapp.com/send/?phone=9191307652913">
+                            <div class="whatsapp">
+                                <i class="fa fa-whatsapp" style="color:white"></i>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+                <a href="https://forms.gle/cKm8hdevvmtMJAK5A">
+                    <div class="register-button">Register</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+
+        <div class="foot-L">
+            <img src="../Media/Images/dbce_logo.png" alt="dbce" class="dbce-logo">
+            <br>
+            <img src="../Media\Logos\main-logo.png" alt="Inspirus 2022" class="inspirus-logo">
+            <div class="footer-text-left">
+                <span style="font-weight: 600;">Instagram:</span> @inspirusdbce<br>
+                <span style="font-weight: 600;">Facebook:</span> Inspirusdbce<br>
+                <span style="font-weight: 600;">twitter:</span> @inspirus_dbce<br>
+
+            </div>
+            <ul class="ul1">
+                <li><a href="https://www.instagram.com/inspirusdbce/"><i class="fa fa-instagram fa-lg"  style="font-size: 0.73em;"></i></a></li>
+                <li><a href="https://m.facebook.com/inspirusdbce/"><i class="fa fa-facebook-square fa-lg" style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/inspirus_dbce"><i class="fa fa-twitter fa-lg" style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
+
+
+            </ul>
+            <!-- <div class="contact"> 
           <ul class="list" ">
-            <li> <img src="images/phone.png"></li>  
-            <li><img src="images/insta.png"></li> 
-            <li><img src="images/fb.png"></li> 
+            <li> <img src="/Media/Images/phone.png"></li>  
+            <li><img src="/Media/Images/insta.png"></li> 
+            <li><img src="/Media/Images/fb.png"></li> 
           </ul>
         
       </div>-->
-    </div> 
+        </div>
 
-  <div class="foot-r">
-    <div class="section-header">Sponsored by:<hr></div>
+        <div class="foot-r">
+            <!-- <div class="section-header">Sponsored by:<hr></div>
   <br>
 <div class="all" style="margin-left: 2rem;">
   <div class="sponsorsa">
-    <div class="sponsora-logo"><a href="https://oneshield.com/about/"><img style="width:80%" src="images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
-    <div class="sponsora-logo"><a href="https://kilowott.com/"><img style="width:80%; height:89% ;  margin-top:-.7rem;" src="images\helpers\kilowott.png" alt="Kilowott"></a></div>
-    <div class="sponsora-logo"><a href="https://www.creativecapsule.com/"><img style="width:80%;height: 58%; margin-top: .2rem;" src="images\helpers\CC_logo.jpg" alt="Creative Capsule"></a></div>
+    <div class="sponsora-logo"><a href="https://oneshield.com/about/"><img style="width:80%" src="Media\Images\helpers\OS Software Logo.png" alt="OneShield Software"></a></div>
+    <div class="sponsora-logo"><a href="https://kilowott.com/"><img style="width:80%; height:89% ;  margin-top:-.7rem;" src="Media\Images\helpers\kilowott.png" alt="Kilowott"></a></div>
+    <div class="sponsora-logo"><a href="https://www.creativecapsule.com/"><img style="width:80%;height: 58%; margin-top: .2rem;" src="Media\Images\helpers\CC_logo.jpg" alt="Creative Capsule"></a></div>
   </div>
     <div class="sponsorsa">
-    <div class="sponsora-logo"><a href="https://www.siliconcortech.com/"><img style="width:80%;margin-top: .2rem;" src="images\helpers\silicon.jpeg" alt="Silicon Cortech"></a></div>
-    <div class="sponsora-logo"><a href="http://realdrinks.in/"><img style="width:80% ; height: 80%;" src="images\helpers\real.png" alt="Real Drinks"></a></div>
-    <div class="sponsora-logo"><a href="https://www.instagram.com/green_alchemist_nursery"><img style="width:60%; height:85% ; margin-left: 1rem; margin-top:.2rem;" src="images\helpers\green.png" alt="Green Alchemist"></a></div>
-    <div class="sponsora-logo"><a href="http://www.tgfdreamguesthouse.com/"><img style="width:80%;height: 58%;" src="images\helpers\tgf.jpg" alt="TGF Guest House"></a></div>
+    <div class="sponsora-logo"><a href="https://www.siliconcortech.com/"><img style="width:80%;margin-top: .2rem;" src="Media\Images\helpers\silicon.jpeg" alt="Silicon Cortech"></a></div>
+    <div class="sponsora-logo"><a href="http://realdrinks.in/"><img style="width:80% ; height: 80%;" src="Media\Images\helpers\real.png" alt="Real Drinks"></a></div>
+    <div class="sponsora-logo"><a href="https://www.instagram.com/green_alchemist_nursery"><img style="width:60%; height:85% ; margin-left: 1rem; margin-top:.2rem;" src="Media\Images\helpers\green.png" alt="Green Alchemist"></a></div>
+    <div class="sponsora-logo"><a href="http://www.tgfdreamguesthouse.com/"><img style="width:80%;height: 58%;" src="Media\Images\helpers\tgf.jpg" alt="TGF Guest House"></a></div>
   
   </div>
   
-<pre>
-    Race to win It : relay   (multiplayer - max 4)
 
-    Rush hour: relay (multiplayer - max 3)
-   
-       Ping tac toe (multiplayer - max 2)
-   
-   
-   
-    Brain teaser (single player)
-    Spin-O-Wheel (single player)
-   
-</pre>
 <br>
 
 </div>
-<div class="map">
-  <iframe frameborder="2" scrolling="no"src="https://maps.google.com/maps?width=10%25&amp;height=400&amp;hl=en&amp;q=Dbce+(Don%20Bosco%20College%20of%20Engineering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-  </div>
-  </div>
-  <script src="../Scripts/Nav.js"></script>
-  <script>
-      AOS.init();
-
+<div class="section-header">Media Partner:<hr></div>
+  <br> -->
+            <!-- <div class="all" style="margin-left: 2rem;">
+  <div class="sponsorsa mediap">
+    <div class="sponsora-logo mediap"><a href="https://goanewshub.com/"><img style="width:50%" src="Media\Images\helpers\goanewshub.jpg" alt="Goa News Hub"></a></div>
     
+  </div>
+  
 
-</script>
+<br>
+
+</div> -->
+            <div class="map" style="text-align:center">
+                <iframe frameborder="2" scrolling="no" src="https://maps.google.com/maps?width=10%25&amp;height=400&amp;hl=en&amp;q=Dbce+(Don%20Bosco%20College%20of%20Engineering)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+        </div>
+        <!--End of Footer-->
+        <script src="../Scripts/Nav.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
 
 </body>
+
 </html>
