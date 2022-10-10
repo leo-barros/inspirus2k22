@@ -3,14 +3,9 @@ body{
     margin: 0px;
     padding: 0px;
     z-index: 999;
+    max-width: 100vw;
 }
-.navbar{
-    height: auto;
-    width: 100%;
-    padding: 10px 10px 10px 10px;
-    position: relative;
-    background-color: black;
-}
+
 .link{
     color: white;
     text-decoration: none;
