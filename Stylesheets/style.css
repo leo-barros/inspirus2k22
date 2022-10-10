@@ -558,6 +558,28 @@ color: #000000;
   background: #f09433;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
+.mclass
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+.mclass-title{
+  font-size: 3.4rem;
+  padding: 1rem;
+}
+.mclass-sub{
+  font-size: 2rem;
+  padding: 1rem;
+}
+.mclass-img
+{
+  width: 95%;
+  margin: auto;
+  border-radius: 2rem;
+}
+
 
 /*MOBILE VIEW */
 @media (max-width: 900px) {
@@ -567,6 +589,8 @@ color: #000000;
     margin: auto;
     align-items: center;
   }
+
+  
   .silicon img {
     margin-left: 1rem;
   }
