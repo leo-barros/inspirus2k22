@@ -78,7 +78,14 @@ font-weight: 450;
 
   align-content: center;
 }
-
+.tagline
+{
+  text-align: center;
+  margin-top: -3rem;
+  font-size: 4rem;
+  color:rgb(0, 0, 0);
+  margin-bottom: 4rem;
+}
 .menu-icon {
  cursor: pointer;
   display: none;
@@ -558,10 +565,11 @@ color: #000000;
     margin-top: 2.3rem;
   }
   .main-title {
-    font-size: 4.5rem;
+    font-size: 7rem;
   }
-  .logo {
-    
+  .tagline
+  {
+    font-size: 3rem
   }
   .menu-icon {
 
