@@ -31,7 +31,7 @@ canvas {
 
 #particles-js {
 
-  filter: blur(50px);
+  filter: blur(50px) ;
   opacity: 100%;
   width: 90%;
   height: 90%;

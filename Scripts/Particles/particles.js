@@ -295,9 +295,9 @@ var pJS = function(tag_id, params){
        // r: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
         //g: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
         //b: (Math.floor(Math.random() * (255 - 0 + 1)) + 0)
-        r:(Math.floor(Math.random() * (255))),
-        g:(Math.floor(Math.random() * (0))),
-        b:(Math.floor(Math.random() * (255)))
+        r:(Math.floor(Math.random() * (255)))+10,
+        g:(Math.floor(Math.random() * (0)))+10,
+        b:(Math.floor(Math.random() * (255)))+100
       }
     }
     else if(typeof(color.value) == 'string'){
