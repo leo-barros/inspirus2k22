@@ -100,7 +100,7 @@
     <div class="main">
         <div class="main-para">
             <div class="rules">
-                <div class="top">
+                <div class="top fade" style="display:block ;" id="fade">
                     <div class=" sub-title">Eligibility Criteria</div>
                     <ul>
                         <li>Undergraduate and Diploma Students from all professional and non-professional institutions
@@ -108,7 +108,7 @@
                         <li>Maximum 2 Teams per Institution </li>
                     </ul>
                 </div>
-                <div class="bottom">
+                <div class="bottom fade" style="display:block ;">
 
                     <div class=" sub-title">Rules</div>
                     <ul>
@@ -125,10 +125,25 @@
                     </ul>
 
                 </div>
+                <div class="bottom fade" id="panel">
+                    <div class=" sub-title">A Riddle!</div>
+                    <form align="center">
+                        <i>What is so fragile that saying its name breaks it?</i><br>
+                        <input id="quantity" class="qty" type="text" placeholder="Answer" />
+                        <br>
+                        <input type="button" value="Submit" id="calc" />
+                    </form>
+                </div>
+                <div class="bottom fade" style="display: none;" id="panel3">
+                    <div class=" sub-title"><i>Well Done!!!</i></div>
+                </div>
+                <div class="bottom" style="display: none;" id="panel2">
+                    <div class=" sub-title">Refresh!!!</div>
+                </div>
 
 
             </div>
-            <div class="right">
+            <div class="right fade">
                 <div class="event-details">
                     <div class="event-details-header">Event Details</div>
                     <span class="event-details-section">AKA:</span> Quiz<br>
@@ -140,14 +155,14 @@
                     <span class="event-details-section">Team Members :</span> 2 per team (Maximum 30 Teams) <br>
                     <br>
                 </div>
-                <div class="event-details prizes">
+                <div class="event-details prizes fade">
                     <div class="event-details-header">Prizes</div>
                     <span>🥇</span>
                     <span class="event-details-section">1st:</span>₹2000 + Gift Voucher worth 2k<br><span>🥈</span>
                     <span class="event-details-section">2nd :</span>₹1000 + Gift Voucher worth 2k<br>
 
                 </div>
-                <div class="card">
+                <div class="card fade">
                     <img src="https://cdn.discordapp.com/attachments/1026865791557181550/1027121914512150538/Abhinav_Kuppasad.png" />
                     <h1>Abhinav Kuppasad</h1>
                     <h2>Event Co-ordinator</h2>
@@ -160,7 +175,7 @@
 
                     </div>
                 </div>
-                <div class="card">
+                <div class="card fade">
                     <img src="https://cdn.discordapp.com/attachments/1026865791557181550/1027546606024798239/Vedant_Gad.png" />
                     <h1>Vedant Gad</h1>
                     <h2>Event Co-Leader</h2>
@@ -173,7 +188,7 @@
 
                     </div>
                 </div>
-                <a href="https://forms.gle/c21ztG4WsuqG26o76">
+                <a href="https://forms.gle/c21ztG4WsuqG26o76" class="fade">
                     <div class="register-button">Register</div>
                 </a>
             </div>
@@ -259,6 +274,23 @@
                     menuList.style.maxHeight = "130px";
                 } else {
                     menuList.style.maxHeight = "0px";
+                }
+            }
+
+            document.getElementById('calc').addEventListener('click', updater);
+
+            function updater() {
+                var quantity = document.getElementById('quantity').value;
+                const nodeList = document.querySelectorAll(".fade");
+                if (quantity == "silence" || quantity == "Silence") {
+                    document.getElementById('panel').style.display = "none";
+                    document.getElementById('panel3').style.display = "block";
+                } else {
+                    for (let i = 0; i < nodeList.length; i++) {
+                        nodeList[i].style.cssText = "display:none;transition:opacity 1s ease-out;opacity:0;";
+                    }
+                    document.getElementById('panel2').style.display = "block";
+
                 }
             }
         </script>
