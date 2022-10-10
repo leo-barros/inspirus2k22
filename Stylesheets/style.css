@@ -68,11 +68,12 @@ font-weight: 450;
   align-items: center;
 }
 
+
 .logo {
 
 
   height: 5rem;
-  padding: 1rem;
+  padding: 1.3rem;
   cursor: pointer;
 
   align-content: center;
@@ -853,7 +854,7 @@ color: #000000;
 }
 
 .li.complete .status h4 {
-  color: --textCard;
+  color: black;
   padding: 1rem;
 }
 
