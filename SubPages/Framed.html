@@ -59,7 +59,19 @@
     </div>
 
     <!-- nav end-->
+    <div class="" style="display: none;" id="panel">
+        <video autoplay muted style="width: 100%; height: 100vh; overflow: hidden;z-index: 999;object-fit: cover;" scrolling="no" id="vid">
+            <source src="../Media/icons/shutter.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="event-title">Framed</div>
+    <p style="text-align: center;font-size: 20px;">Say "
+        <a id="switch" onclick="toggleegg()" style="cursor: pointer;">
+
+            cheese
+
+        </a>"!
+    </p>
     <!-- <div class="helper-container">
         <div class="helper-title">SPONSORED BY:</div>
         <div class="sponsors">
@@ -99,12 +111,12 @@
 
                     <div class="  sub-title">Rules</div>
                     <ul>
-                        <li>Participants have to submit a maximum of 2 photos. </li>
-                        <li>Participants should submit photos in jpeg, jpg or png format.</li>
-                        <li>Participants are allowed to use Mobile phones and DSLRs.</li>
-                        <li>Photos should be taken between the given time period.</li>
-                        <li>Basic editing such as color enhancement and cropping of the photo is allowed.</li>
-                        <li>Advanced editing used to create illusion, manipulation, filters and adding/removing of significant elements, watermarks within the frame is prohibited.</li>
+                        <li>Participants have to submit a maximum of 2 photos</li>
+                        <li>Participants should submit photos in jpeg, jpg or png format</li>
+                        <li>Participants are allowed to use Mobile phones and DSLRs</li>
+                        <li>Photos should be taken between the given time period</li>
+                        <li>Basic editing such as colour enhancement and cropping of the photo is allowed</li>
+                        <li>Advanced editing used to create an illusion, manipulation, filters and adding/removing of significant elements, and watermarks within the frame is prohibited</li>
                         <li>Participants are required to provide a unique caption for the images submitted.</li>
                         <li>Submit your image files renamed as ‘img_1’ & ‘img_2’ </li>
                         <li>All the details of the photo will be checked.</li>
@@ -192,9 +204,12 @@
 
             </div>
             <ul class="ul1">
-                <li><a href="https://www.instagram.com/inspirusdbce/"><i class="fa fa-instagram fa-lg"  style="font-size: 0.73em;"></i></a></li>
-                <li><a href="https://m.facebook.com/inspirusdbce/"><i class="fa fa-facebook-square fa-lg" style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/inspirus_dbce"><i class="fa fa-twitter fa-lg" style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/inspirusdbce/"><i class="fa fa-instagram fa-lg"
+                            style="font-size: 0.73em;"></i></a></li>
+                <li><a href="https://m.facebook.com/inspirusdbce/"><i class="fa fa-facebook-square fa-lg"
+                            style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
+                <li><a href="https://twitter.com/inspirus_dbce"><i class="fa fa-twitter fa-lg"
+                            style="font-size: 0.73em;" aria-hidden="true"></i></a></li>
 
 
             </ul>
@@ -258,6 +273,25 @@
                     menuList.style.maxHeight = "130px";
                 } else {
                     menuList.style.maxHeight = "0px";
+                }
+            }
+
+            var egg = document.getElementById("panel");
+
+
+            function toggleegg() {
+                if (egg.style.display == "none") {
+                    egg.style.display = "block";
+                    if (egg.style.display == "block") {
+                        video = document.getElementById('vid');
+                        video.load();
+                        video.play();
+                        setTimeout(function() {
+                            egg.style.display = "none"
+                        }, 2000);
+                    }
+                } else {
+                    egg.style.display = "none"
                 }
             }
         </script>
