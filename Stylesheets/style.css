@@ -4,6 +4,7 @@ html {
   font-size: 62.5%; /*  1rem = 10px  */
   scroll-behavior: smooth;
 }
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 1,
@@ -206,6 +207,8 @@ body {
 }
 
 .section-header {
+
+  flex-direction: column;
   text-align: center;
   -webkit-backdrop-filter: blur(0rem);
   backdrop-filter: blur(0rem);
