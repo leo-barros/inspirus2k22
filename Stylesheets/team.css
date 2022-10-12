@@ -28,22 +28,24 @@ margin-bottom: 7rem;
     height: 32rem;
     border-radius: 2rem;
     display: flex;
+   
     justify-content: center;
     align-items: flex-start;
     transition: 400ms;
-    box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.081);
- 
+    box-shadow: 1vh 1vh 2vh rgba(0, 0, 0, 0.1);
+    
 }
 
 
 .card{
-
+   
+height: 100%;
     border-radius: inherit;
 
 }
 .member:hover{
     transform: translateY(-1rem);
-
+    box-shadow: 1vh 2vh 2vh rgb(0, 0, 0,0.1);
 
 }
 
@@ -86,13 +88,15 @@ font-weight: 600 !important;
 }
 
 .SocialButton{
-    
+position: relative;
     text-decoration: none;
     border-radius: 1rem;
     font-size: 1.2rem;
     background: rgb(220, 220, 220);
     padding: .5rem 5rem;
+   top: 1rem;
     transition: 400ms;
+    
     
 }
 
@@ -102,13 +106,64 @@ font-weight: 600 !important;
     font-weight: 400;
 }
 
+#SwitchTab div:hover{
+    background: rgb(102, 158, 255);
+
+  
+  }
+
 .LinkedIn:hover{
-    background: #0077b5;
+    background: #000000;
     color: white;
     font-weight: 400;
 }
 
-.Faculty{
+#ST{
    
-    display: none;
+   margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#SwitchTab{
+    background: #000000;
+    padding: .2rem;
+  margin-top: 0rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+
+  
+}
+
+#SwitchTab div{
+    font-size: 1rem;
+    background: rgb(255, 255, 255);
+    width: 8rem;
+    font-weight: 900;
+    text-align: center;
+  
+   color: rgb(0, 0, 0);
+    padding: 1rem;
+    transition: background-color 400ms;
+}
+
+#std{
+border-radius:  2rem 0rem 0rem 2rem;
+}
+#fac{
+    border-radius:  0rem 2rem 2rem 0rem;
+}
+
+.Student{
+    display: none ;
+
+}
+.Faculty{
+    display: flex;
+}
+.tabselected{
+    color: aliceblue !important;
+    background: rgb(0, 0, 0)!important;
 }

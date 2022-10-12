@@ -25,7 +25,6 @@
 <!--DONT Put Anything In Here-->
 <div id="P-cont"><div id="particles-js"></div></div>
 <!--DONT Put Anything In Here-->
-<script src="./Scripts/navbar.js"></script>
 <div class="navbar" id="navB">
   <a href="../index.html" id="NavBLG">
   
@@ -49,7 +48,13 @@
     </span></a>
   
 </div>
-  
+  <section id="ST" >
+    <div id="SwitchTab">
+        <div id="std" onclick="muasu('s')">Students</div>
+        <div id="fac" class="tabselected"onclick="muasu('f')">Faculty</div>
+    </div>
+  </section>
+
             <div class="section-header  Faculty">Don Bosco College Of Engineering<hr></div>
   
             <div class="team Faculty">
@@ -100,8 +105,8 @@
                         <h1 class="role">Inspirus Co-ordinator</h1>                   
                     </div>
                 </div>
-        </div> -->
-    <!--TEAM MODULE END
+        </div>
+    <!--TEAM MODULE END-->
 
     <!--TEAM MODULE-->     
     <div class="section-header  Student">Council Members<hr></div>
@@ -559,8 +564,45 @@
 
 
         
+<script>
+    var student= document.getElementsByClassName('Student');
+    var Faculty= document.getElementsByClassName('Faculty');
+    const s=document.getElementById('std')
+    const f=document.getElementById('fac')
+    console.log(student)
+    console.log(Faculty)
+    function muasu(m){
+   
+    if(m=='s'){
+        //f.style display none
+        //
+        
+        for(let i=0;i<Faculty.length;i++){
+            Faculty[i].style.display='none'
+        }
+        for(let i=0;i<student.length;i++){
+            student[i].style.display='flex'
+        }
 
-          
+        s.classList.add('tabselected')
+        f.classList.remove('tabselected')
+    }if(m=='f'){
+        for(let i=0;i<student.length;i++){
+            student[i].style.display='none'
+        }
+        for(let i=0;i<Faculty.length;i++){
+            Faculty[i].style.display='flex'
+        }
+        //s.style display none
+        f.classList.add('tabselected')
+        s.classList.remove('tabselected')
+    }
+}
+
+
+</script>
+        <script src="../Scripts/navbar.js" ></script>
+
         <script src="../Scripts/Nav.js"></script> 
         <script src="../Scripts/Particles/particles.js"></script> 
         <script src="../Scripts/Particles/app.js"></script>

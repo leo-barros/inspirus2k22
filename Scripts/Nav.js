@@ -4,7 +4,6 @@ const mB=document.getElementById("MENUBUTTON");
 
 
 function togglemenu(){
- console.log(menuList.style.maxHeight)
      if(menuList.style.maxHeight =="0px")
      {
          mB.textContent="close"
