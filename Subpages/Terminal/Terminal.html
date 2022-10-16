@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +60,82 @@
 
 <h5 class="line">>><input type="text" name="" id="" class="line"  spellcheck="false" autofocus></h5>
     
+<style>
+    * {
+  margin: 0%;
+  scroll-behavior: smooth;
+}
+*::-moz-selection {
+  background: var(--select);
+  color: var(--selecttext);
+}
+*::selection {
+  background: var(--select);
+  color: var(--selecttext);
+}
+* ::-webkit-scrollbar {
+  display: none;
+}
 
+body {
+  background: var(--bg);
+}
+
+#me {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  --bg:black;
+  --text:rgb(0, 255, 0);
+  --select:white;
+  --selecttext:black;
+}
+
+.light {
+  --bg:rgb(255, 255, 255);
+  --text:rgb(14, 14, 14);
+  --select:blue;
+  --selecttext:white;
+}
+
+.line {
+  font-family: monospace;
+  font-size: 1.1em;
+  color: var(--text);
+  filter: blur(0.2px);
+}
+
+#terminal {
+  transition: filter 0.5s, opacity 0.3s 0.1ms;
+  overflow: scroll;
+}
+
+input {
+  width: 90vw;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+input:focus {
+  font-family: monospace;
+  font-size: 1.1em;
+  color: var(--text);
+  filter: blur(0.1px);
+  border: none;
+  text-decoration: none;
+  outline: none;
+}
+
+.logo {
+  font-size: 1vw;
+  word-wrap: none;
+}
+
+.rick {
+  font-size: min(1.5vw, 2.3vh);
+}
+</style>
 
 <script src="\../Scripts/terminal.js"></script>
 </body>
