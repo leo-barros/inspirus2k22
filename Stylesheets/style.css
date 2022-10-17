@@ -317,7 +317,10 @@ body {
   height: 10rem;
   width: auto;
 }
-
+.powered-by-logo img
+{
+  height: 18rem;
+}
 .silicon {
   width: 70%;
   height: 60%;
@@ -690,6 +693,16 @@ color: #000000;
   .helper-logo img {
     height: auto;
   }
+  .powered-by-logo
+{
+  max-width: 70rem;
+  flex-shrink: 0;
+}
+  .powered-by-logo img
+{
+  flex-shrink: 0;
+  height: 13rem;
+}
   .sponsorsa {
     flex-direction: row;
     align-items: flex-start;
