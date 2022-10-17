@@ -151,6 +151,7 @@ body {
 }
 
 .helper-title {
+  color: white;
   position: relative;
   text-align: center;
   flex-wrap: nowrap;
@@ -280,10 +281,11 @@ body {
 /* Sponsors */
 .helper-container {
   position: relative;
-  width: 83%;
-  background-color: rgba(0, 0, 0, 0.171);
+  width:83%;
+  background-color: rgba(0, 0, 0, 0.897);
   margin: auto;
-  border-radius: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
   margin-bottom: 7rem;
 }
 
@@ -663,7 +665,7 @@ color: #000000;
   }
   .helper-container {
     margin-top: -1rem;
-    width: 95%;
+    width: 84%;
     margin-bottom: 0;
   }
   .sponsors {
@@ -683,7 +685,7 @@ color: #000000;
     flex-wrap: nowrap;
     padding: 0;
     margin: auto;
-    max-width: 15rem;
+    max-width: 18rem;
   }
   .helper-logo img {
     height: auto;
