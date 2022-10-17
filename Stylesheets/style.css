@@ -689,19 +689,19 @@ color: #000000;
     padding: 0;
     margin: auto;
     max-width: 18rem;
+    flex-shrink: 0;
   }
   .helper-logo img {
     height: auto;
   }
   .powered-by-logo
 {
-  max-width: 70rem;
+  max-width: 38rem;
   flex-shrink: 0;
 }
   .powered-by-logo img
 {
   flex-shrink: 0;
-  height: 13rem;
 }
   .sponsorsa {
     flex-direction: row;
