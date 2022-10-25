@@ -294,6 +294,9 @@ body {
   position: relative;
   width: 84%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   border-radius: 0.5rem;
   margin: auto;
   font-size: 2rem;
@@ -308,18 +311,16 @@ body {
   align-content: center;
   text-align: center;
   justify-self: center;
-  border-radius: 2rem;
-  overflow: hidden;
-  margin: auto;
+  margin: 1.2rem;
 }
 
 .helper-logo img {
-  height: 10rem;
+  height: 6rem;
   width: auto;
 }
 .powered-by-logo img
 {
-  height: 18rem;
+  height: 12rem;
 }
 .silicon {
   width: 70%;
@@ -688,7 +689,7 @@ color: #000000;
     flex-wrap: nowrap;
     padding: 0;
     margin: auto;
-    max-width: 18rem;
+    max-width: 11rem;
     flex-shrink: 0;
   }
   .helper-logo img {
@@ -696,7 +697,7 @@ color: #000000;
   }
   .powered-by-logo
 {
-  max-width: 38rem;
+  max-width: 25rem;
   flex-shrink: 0;
 }
   .powered-by-logo img
@@ -736,7 +737,7 @@ color: #000000;
     font-size: 3.5vw;
   }
   .about-card {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     width: 75%;
   }
   .event h1 {
